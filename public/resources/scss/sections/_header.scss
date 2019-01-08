@@ -1,0 +1,88 @@
+#header-section {
+  @include flex-box(flex-start, stretch, row, flex);
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/bg-header.jpg);
+  background-size: cover;
+  background-position: center;
+
+  #navigation-section {
+    @include flex-box(space-between, center, row, flex);
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    border-bottom: 1px solid black;
+
+    a {
+      padding: 0 2rem;
+
+      h1 {
+        color: $blackish;
+        font-size: 3rem;
+        font-weight: 500;
+      }
+    }
+
+    ul {
+      @include flex-box(flex-start, stretch, row, flex);
+
+      a {
+        padding: 0 2rem 0 0;
+
+        li {
+          color: $blackish;
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+
+  #banner-section {
+    @include flex-box(flex-end, stretch, column, flex);
+    width: 100%;
+
+    .banner-title {
+      @include flex-box(center, center, column, flex);
+      width: 100%;
+      height: 100%;
+
+      h1 {
+        position: relative;
+        right: 4rem;
+        font-size: 6rem;
+        font-weight: 500;
+      }
+
+      h2 {
+        position: relative;
+        right: -4rem;
+        font-size: 1.1rem;
+        color: $light-brown;
+      }
+    }
+
+    .social-icons {
+      @include flex-box(center, stretch, row, flex);
+
+      a {
+        padding: 0 1rem;
+
+        i {
+          color: $blackish;
+        }
+      }
+    }
+
+    .next {
+      @include flex-box(center, stretch, row, flex);
+
+      a {
+
+        i {
+          color: $light-brown;
+          height: 1rem;
+        }
+      }
+    }
+  }
+}

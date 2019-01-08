@@ -1,3 +1,87 @@
+#header-section {
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/bg-header.jpg);
+  background-size: cover;
+  background-position: center; }
+  #header-section #navigation-section {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    border-bottom: 1px solid black; }
+    #header-section #navigation-section a {
+      padding: 0 2rem; }
+      #header-section #navigation-section a h1 {
+        color: #1e1f26;
+        font-size: 3rem;
+        font-weight: 500; }
+    #header-section #navigation-section ul {
+      justify-content: flex-start;
+      align-items: stretch;
+      flex-direction: row;
+      display: flex; }
+      #header-section #navigation-section ul a {
+        padding: 0 2rem 0 0; }
+        #header-section #navigation-section ul a li {
+          color: #1e1f26;
+          font-size: 1.25rem; }
+  #header-section #banner-section {
+    justify-content: flex-end;
+    align-items: stretch;
+    flex-direction: column;
+    display: flex;
+    width: 100%; }
+    #header-section #banner-section .banner-title {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      display: flex;
+      width: 100%;
+      height: 100%; }
+      #header-section #banner-section .banner-title h1 {
+        position: relative;
+        right: 4rem;
+        font-size: 6rem;
+        font-weight: 500; }
+      #header-section #banner-section .banner-title h2 {
+        position: relative;
+        right: -4rem;
+        font-size: 1.1rem;
+        color: #8c6a5e; }
+    #header-section #banner-section .social-icons {
+      justify-content: center;
+      align-items: stretch;
+      flex-direction: row;
+      display: flex; }
+      #header-section #banner-section .social-icons a {
+        padding: 0 1rem; }
+        #header-section #banner-section .social-icons a i {
+          color: #1e1f26; }
+    #header-section #banner-section .next {
+      justify-content: center;
+      align-items: stretch;
+      flex-direction: row;
+      display: flex; }
+      #header-section #banner-section .next a i {
+        color: #8c6a5e;
+        height: 1rem; }
 
+html {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
