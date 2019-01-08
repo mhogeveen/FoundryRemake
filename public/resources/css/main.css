@@ -7,7 +7,8 @@
   height: 100vh;
   background-image: url(../images/bg-header.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
   #header-section #navigation-section {
     justify-content: space-between;
     align-items: center;
@@ -15,8 +16,7 @@
     display: flex;
     position: fixed;
     width: 100%;
-    height: 4rem;
-    border-bottom: 1px solid black; }
+    height: 4rem; }
     #header-section #navigation-section a {
       padding: 0 2rem; }
       #header-section #navigation-section a h1 {
@@ -53,9 +53,9 @@
         font-weight: 500; }
       #header-section #banner-section .banner-title h2 {
         position: relative;
-        right: -4rem;
+        right: -2rem;
         font-size: 1.1rem;
-        color: #8c6a5e; }
+        color: #blackish; }
     #header-section #banner-section .social-icons {
       justify-content: center;
       align-items: stretch;
@@ -71,8 +71,67 @@
       flex-direction: row;
       display: flex; }
       #header-section #banner-section .next a i {
-        color: #8c6a5e;
-        height: 1rem; }
+        color: #1e1f26;
+        height: 1rem;
+        transition: transform 300ms linear; }
+        #header-section #banner-section .next a i:hover {
+          transform: scale(1.2); }
+
+#hook-section {
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  height: 100vh; }
+  #hook-section .hook-container {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    width: 85%; }
+    #hook-section .hook-container .hook-story {
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-direction: column;
+      display: flex;
+      width: 60%;
+      height: 65vh;
+      border: 1px solid lightgray;
+      position: relative;
+      top: -3rem; }
+      #hook-section .hook-container .hook-story h3 {
+        font-size: 5rem;
+        font-weight: 100;
+        padding: 2rem 2rem 0 2rem; }
+      #hook-section .hook-container .hook-story p {
+        padding: 2rem;
+        line-height: 1.5; }
+      #hook-section .hook-container .hook-story a {
+        padding: 1rem 2rem;
+        margin: 0 0 0 2rem;
+        background-color: #383a3e;
+        color: #ffffff;
+        font-weight: 500; }
+    #hook-section .hook-container .hook-images {
+      justify-content: flex-start;
+      align-items: stretch;
+      flex-direction: column;
+      display: flex;
+      width: 40%; }
+      #hook-section .hook-container .hook-images .hook-img1 {
+        position: relative;
+        right: -2rem;
+        height: 35vh;
+        background-image: url(../images/hook1.jpg);
+        background-size: cover; }
+      #hook-section .hook-container .hook-images .hook-img2 {
+        position: relative;
+        top: 2rem;
+        right: 7rem;
+        height: 35vh;
+        background-image: url(../images/hook2.jpg);
+        background-size: cover; }
 
 html {
   width: 100%;
