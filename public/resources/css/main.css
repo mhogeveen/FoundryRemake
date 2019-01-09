@@ -23,7 +23,8 @@
       #header-section #navigation-section a h1 {
         color: #1e1f26;
         font-size: 3rem;
-        font-weight: 500; }
+        font-weight: 500;
+        text-shadow: 4px 0 0 #ffffff; }
     #header-section #navigation-section ul {
       justify-content: flex-start;
       align-items: stretch;
@@ -33,7 +34,8 @@
         padding: 0 2rem 0 0; }
         #header-section #navigation-section ul a li {
           color: #1e1f26;
-          font-size: 1.25rem; }
+          font-size: 1.25rem;
+          text-shadow: 2px 0 0 #ffffff; }
   #header-section #banner-section {
     justify-content: flex-end;
     align-items: stretch;
@@ -143,16 +145,43 @@
   background-position: center; }
 
 #instagram-section {
-  justify-content: flex-start;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   display: flex;
   width: 100%;
   height: 60vh; }
-  #instagram-section .instagram-post {
-    width: 20%; }
-  #instagram-section .instagram-tekst {
-    width: 40%; }
+  #instagram-section .instagram-container {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    width: 95%;
+    height: 75%; }
+    #instagram-section .instagram-container .instagram-posts {
+      width: 60%;
+      height: 100%;
+      border: 1px solid lightgray; }
+    #instagram-section .instagram-container .instagram-tekst {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      display: flex;
+      width: 40%;
+      height: 100%;
+      border: 1px solid lightgray;
+      text-align: center; }
+      #instagram-section .instagram-container .instagram-tekst h3 {
+        font-size: 5rem;
+        font-weight: 100;
+        padding: 0 0 1.5rem 0; }
+      #instagram-section .instagram-container .instagram-tekst span {
+        width: 90%;
+        padding: 1.5rem 0 0 0;
+        border-top: 1px solid lightgray; }
+        #instagram-section .instagram-container .instagram-tekst span a {
+          color: #000000;
+          font-weight: 600; }
 
 html {
   width: 100%;
