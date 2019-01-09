@@ -1,0 +1,13 @@
+#instagram-section {
+  @include flex-box(flex-start, stretch, row, flex);
+  width: 100%;
+  height: 60vh;
+
+  .instagram-post {
+    width: 20%;
+  }
+
+  .instagram-tekst {
+    width: 40%;
+  }
+}
