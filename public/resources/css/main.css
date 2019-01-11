@@ -68,16 +68,16 @@
         padding: 0 1rem; }
         #header-section #banner-section .social-icons a i {
           color: #1e1f26; }
-    #header-section #banner-section .next {
+    #header-section #banner-section .banner-next {
       justify-content: center;
       align-items: stretch;
       flex-direction: row;
       display: flex; }
-      #header-section #banner-section .next a i {
+      #header-section #banner-section .banner-next a i {
         color: #1e1f26;
         height: 1rem;
         transition: transform 300ms linear; }
-        #header-section #banner-section .next a i:hover {
+        #header-section #banner-section .banner-next a i:hover {
           transform: scale(1.2); }
 
 #hook-section {
@@ -85,6 +85,7 @@
   align-items: stretch;
   flex-direction: row;
   display: flex;
+  position: relative;
   width: 100%;
   height: 100vh; }
   #hook-section .hook-container {
@@ -135,14 +136,45 @@
         height: 35vh;
         background-image: url(../images/hook2.jpg);
         background-size: cover; }
+  #hook-section .hook-next {
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    display: flex;
+    position: absolute;
+    bottom: 0; }
+    #hook-section .hook-next a i {
+      color: #1e1f26;
+      height: 1rem;
+      transition: transform 300ms linear; }
+      #hook-section .hook-next a i:hover {
+        transform: scale(1.2); }
 
 #parallax-section {
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  display: flex;
+  position: relative;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   background-image: url(../images/middle-parallax.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center; }
+  #parallax-section .parallax-next {
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    display: flex;
+    position: absolute;
+    bottom: 0; }
+    #parallax-section .parallax-next a i {
+      color: #ffffff;
+      height: 1rem;
+      transition: transform 300ms linear; }
+      #parallax-section .parallax-next a i:hover {
+        transform: scale(1.2); }
 
 #instagram-section {
   justify-content: center;
@@ -166,10 +198,17 @@
       flex-wrap: wrap;
       width: 60%;
       height: 110%; }
-      #instagram-section .instagram-container .instagram-posts .instagram-img {
+      #instagram-section .instagram-container .instagram-posts a {
         width: 20vh;
         height: 20vh;
         margin: 1rem; }
+      #instagram-section .instagram-container .instagram-posts .instagram-img {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ffffff;
+        transition: transform 200ms ease; }
+        #instagram-section .instagram-container .instagram-posts .instagram-img:hover {
+          transform: scale(1.6); }
       #instagram-section .instagram-container .instagram-posts .img1,
       #instagram-section .instagram-container .instagram-posts .img2,
       #instagram-section .instagram-container .instagram-posts .img3,
@@ -177,16 +216,7 @@
       #instagram-section .instagram-container .instagram-posts .img5,
       #instagram-section .instagram-container .instagram-posts .img6 {
         background-image: url(../images/instagram-placeholder.jpg);
-        background-size: cover;
-        border: 1px solid #ffffff;
-        transition: transform 200ms ease; }
-        #instagram-section .instagram-container .instagram-posts .img1:hover,
-        #instagram-section .instagram-container .instagram-posts .img2:hover,
-        #instagram-section .instagram-container .instagram-posts .img3:hover,
-        #instagram-section .instagram-container .instagram-posts .img4:hover,
-        #instagram-section .instagram-container .instagram-posts .img5:hover,
-        #instagram-section .instagram-container .instagram-posts .img6:hover {
-          transform: scale(1.6); }
+        background-size: cover; }
     #instagram-section .instagram-container .instagram-tekst {
       justify-content: center;
       align-items: center;
@@ -207,6 +237,14 @@
         #instagram-section .instagram-container .instagram-tekst span a {
           color: #000000;
           font-weight: 600; }
+
+#review-section {
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  height: 60vh; }
 
 html {
   width: 100%;
