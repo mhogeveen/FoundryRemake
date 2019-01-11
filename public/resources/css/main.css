@@ -159,9 +159,34 @@
     width: 95%;
     height: 75%; }
     #instagram-section .instagram-container .instagram-posts {
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      display: flex;
+      flex-wrap: wrap;
       width: 60%;
-      height: 100%;
-      border: 1px solid lightgray; }
+      height: 110%; }
+      #instagram-section .instagram-container .instagram-posts .instagram-img {
+        width: 20vh;
+        height: 20vh;
+        margin: 1rem; }
+      #instagram-section .instagram-container .instagram-posts .img1,
+      #instagram-section .instagram-container .instagram-posts .img2,
+      #instagram-section .instagram-container .instagram-posts .img3,
+      #instagram-section .instagram-container .instagram-posts .img4,
+      #instagram-section .instagram-container .instagram-posts .img5,
+      #instagram-section .instagram-container .instagram-posts .img6 {
+        background-image: url(../images/instagram-placeholder.jpg);
+        background-size: cover;
+        border: 1px solid #ffffff;
+        transition: transform 200ms ease; }
+        #instagram-section .instagram-container .instagram-posts .img1:hover,
+        #instagram-section .instagram-container .instagram-posts .img2:hover,
+        #instagram-section .instagram-container .instagram-posts .img3:hover,
+        #instagram-section .instagram-container .instagram-posts .img4:hover,
+        #instagram-section .instagram-container .instagram-posts .img5:hover,
+        #instagram-section .instagram-container .instagram-posts .img6:hover {
+          transform: scale(1.6); }
     #instagram-section .instagram-container .instagram-tekst {
       justify-content: center;
       align-items: center;

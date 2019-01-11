@@ -9,9 +9,34 @@
     height: 75%;
 
     .instagram-posts {
+      @include flex-box(center, center, row, flex);
+      flex-wrap: wrap;
       width: 60%;
-      height: 100%;
-      border: 1px solid lightgray;
+      height: 110%;
+
+      .instagram-img {
+        width: 20vh;
+        height: 20vh;
+        margin: 1rem;
+      }
+
+      .img1,
+      .img2,
+      .img3,
+      .img4,
+      .img5,
+      .img6 {
+        background-image: url(../images/instagram-placeholder.jpg);
+        background-size: cover;
+        border: 1px solid $white;
+        transition: transform 200ms ease;
+
+        &:hover {
+          transform: scale(1.6);
+        }
+      }
+
+
     }
 
     .instagram-tekst {
