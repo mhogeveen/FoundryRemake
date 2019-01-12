@@ -1,0 +1,66 @@
+#menu-section {
+  @include flex-box(center, stretch, row, flex);
+  width: 100%;
+  padding: 4rem 0;
+
+  .menu-column {
+    @include flex-box(flex-start, stretch, column, flex);
+    width: 45%;
+    padding: 0 1rem;
+
+    .menu-info,
+    .menu-main,
+    .menu-drinks,
+    .menu-entree,
+    .menu-dessert,
+    .menu-pastries {
+      @include flex-box(flex-start, center, column, flex);
+      border: 1px solid lightgray;
+      margin: 1rem 0;
+      padding: 2rem;
+    }
+
+    .menu-info {
+      @include flex-box(flex-start, stretch, column, flex);
+      color: $blackish;
+    }
+
+    .menu-main,
+    .menu-pastries {
+      background-color: $blackish;
+      color: $white;
+    }
+
+    .menu-drinks,
+    .menu-entree {
+      background-color: $light-creme;
+      color: $blackish;
+    }
+
+    .menu-entree {
+      margin: 7rem 0 0 0;
+    }
+
+    .menu-dessert {
+      color: $blackish;
+    }
+
+    .course {
+      font-size: 3rem;
+      font-weight: 500;
+      padding: 1rem 0;
+    }
+
+    .dish {
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 1rem 0;
+    }
+
+    .description {
+      font-size: 0.8rem;
+      font-weight: 400;
+      padding: 1rem 0;
+    }
+  }
+}

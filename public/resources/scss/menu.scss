@@ -1,16 +1,16 @@
-// sass --watch public/resources/scss/main.scss:public/resources/css/main.css
+// sass --watch public/resources/scss/menu.scss:public/resources/css/menu.css
 
 // Import external SCSS files
 @import "helper/variables";
 @import "helper/mixins";
 @import "helper/placeholders";
 
-@import "sections/index/header";
-@import "sections/index/hook";
-@import "sections/index/parallax";
-@import "sections/index/instagram";
-@import "sections/index/reviews";
-@import "sections/index/footer";
+@import "sections/menu/header";
+@import "sections/menu/menu-items";
+// @import "sections/";
+// @import "sections/";
+// @import "sections/";
+// @import "sections/";
 
 // Styles applied to whole document
 
