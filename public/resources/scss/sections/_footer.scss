@@ -1,0 +1,40 @@
+#footer-section {
+  @include flex-box(space-around, center, column, flex);
+  width: 100%;
+  height: 15vh;
+
+  h1 {
+    color: $blackish;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .footer-copyright-social {
+    @include flex-box(space-between, stretch, row, flex);
+    width: 90%;
+
+    span {
+      font-size: 0.8rem;
+      color: $blackish;
+    }
+
+    .footer-social {
+
+      a {
+        padding: 0 1rem;
+
+        i {
+          color: $blackish;
+        }
+      }
+    }
+  }
+
+  .footer-top {
+    border: 2px solid $blackish;
+    padding: 0.3rem 1.1rem;
+    color: $blackish;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+}

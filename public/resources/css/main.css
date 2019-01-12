@@ -80,14 +80,14 @@
         right: -2rem;
         font-size: 1.1rem;
         color: #blackish; }
-    #header-section #banner-section .social-icons {
+    #header-section #banner-section .banner-social {
       justify-content: center;
       align-items: stretch;
       flex-direction: row;
       display: flex; }
-      #header-section #banner-section .social-icons a {
+      #header-section #banner-section .banner-social a {
         padding: 0 1rem; }
-        #header-section #banner-section .social-icons a i {
+        #header-section #banner-section .banner-social a i {
           color: #1e1f26; }
     #header-section #banner-section .banner-next {
       justify-content: center;
@@ -319,6 +319,37 @@
       background-color: #ffffff;
       margin: 1rem 1rem 0 1rem;
       cursor: pointer; }
+
+#footer-section {
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 15vh; }
+  #footer-section h1 {
+    color: #1e1f26;
+    font-size: 2rem;
+    font-weight: 500; }
+  #footer-section .footer-copyright-social {
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    display: flex;
+    width: 90%; }
+    #footer-section .footer-copyright-social span {
+      font-size: 0.8rem;
+      color: #1e1f26; }
+    #footer-section .footer-copyright-social .footer-social a {
+      padding: 0 1rem; }
+      #footer-section .footer-copyright-social .footer-social a i {
+        color: #1e1f26; }
+  #footer-section .footer-top {
+    border: 2px solid #1e1f26;
+    padding: 0.3rem 1.1rem;
+    color: #1e1f26;
+    font-size: 0.9rem;
+    font-weight: 700; }
 
 html {
   width: 100%;
