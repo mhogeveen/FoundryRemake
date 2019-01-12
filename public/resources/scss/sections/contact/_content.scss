@@ -1,0 +1,78 @@
+#content-section {
+  @include flex-box(flex-start, stretch, column, flex);
+  width: 100%;
+
+  .content-row {
+    @include flex-box(flex-start, stretch, row, flex);
+    width: 100%;
+
+    .bottom-border {
+      border-bottom: 1px solid lightgray;
+    }
+
+    .content-img {
+      background-image: url(../images/contact-img.jpg);
+      background-size: cover;
+      width: 50%;
+      height: 70vh;
+    }
+
+    .content-info {
+      @include flex-box(center, center, column, flex);
+      width: 50%;
+      height: 70vh;
+
+      span {
+        font-size: 1.75rem;
+        color: $blackish;
+        width: 70%;
+        padding: 1rem 0;
+      }
+
+      p {
+        color: $gray;
+        line-height: 1.5;
+        width: 70%;
+        padding: 1rem 0;
+      }
+    }
+
+    .content-social {
+      @include flex-box(center, center, column, flex);
+      width: 50%;
+      height: 70vh;
+
+      span {
+        font-size: 1.75rem;
+        color: $blackish;
+        width: 70%;
+        padding: 1rem 0;
+      }
+
+      p {
+        color: $gray;
+        line-height: 1.5;
+        width: 70%;
+        padding: 1rem 0;
+      }
+
+      .content-icons {
+        @include flex-box(space-around, stretch, row, flex);
+        width: 70%;
+        padding: 3rem 0;
+
+        a {
+          i {
+            color: $blackish;
+          }
+        }
+      }
+    }
+
+    .content-map {
+      width: 50%;
+      height: 70vh;
+      border: 1px solid black;
+    }
+  }
+}
