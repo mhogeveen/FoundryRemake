@@ -28,7 +28,7 @@
   height: 40vh;
   background-image: url(../images/bg-header-menu.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 0 -250px;
   background-attachment: fixed; }
   #header-section #navigation-section {
     justify-content: space-between;
@@ -133,6 +133,38 @@
       font-size: 0.8rem;
       font-weight: 400;
       padding: 1rem 0; }
+
+#footer-section {
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  background-color: #1e1f26; }
+  #footer-section h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 500; }
+  #footer-section .footer-copyright-social {
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    display: flex;
+    width: 90%; }
+    #footer-section .footer-copyright-social span {
+      font-size: 0.8rem;
+      color: #ffffff; }
+    #footer-section .footer-copyright-social .footer-social a {
+      padding: 0 1rem; }
+      #footer-section .footer-copyright-social .footer-social a i {
+        color: #ffffff; }
+  #footer-section .footer-top {
+    border: 2px solid #ffffff;
+    padding: 0.3rem 1.1rem;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700; }
 
 html {
   width: 100%;
