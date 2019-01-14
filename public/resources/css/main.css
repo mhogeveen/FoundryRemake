@@ -19,9 +19,6 @@
   background-color: #ffffff;
   border: 1px solid lightgray; }
 
-.navBackground {
-  background-color: #ffffff; }
-
 #header-section {
   justify-content: center;
   align-items: stretch;
@@ -42,7 +39,9 @@
     width: 80%;
     height: 4rem;
     z-index: 10;
-    transition: background-color 400ms ease; }
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 400ms ease; }
     @media screen and (max-width: 1500px) {
       #header-section #navigation-section {
         width: 90%; } }

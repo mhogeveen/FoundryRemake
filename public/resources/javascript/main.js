@@ -53,10 +53,12 @@ $(document).ready(function() {
   // Change the background color of the navigation section after scrolling down a set amount
   $(window).scroll(function() {
     if ($(window).scrollTop() > $('#banner-section').height()) {
-      $('#navigation-section').addClass('navBackground')
+      $('#navigation-section').css('border-bottom', '1px solid lightgray');
+      $('#navigation-section').css('background-color', 'white');
     }
     if ($(window).scrollTop() < $('#banner-section').height()) {
-      $('#navigation-section').removeClass('navBackground')
+      $('#navigation-section').css('border-bottom', '1px solid rgba(255, 255, 255, 0)');
+      $('#navigation-section').css('background-color', 'rgba(255, 255, 255, 0)');
     }
   });
 

@@ -11,6 +11,9 @@
     width: 80%;
     height: 4rem;
     z-index: 10;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 400ms ease;
 
     @media screen and (max-width: $breakpoint1) {
       width: 90%;
