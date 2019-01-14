@@ -15,12 +15,14 @@
       background-size: cover;
       width: 50%;
       height: 70vh;
+      min-height: 500px;
     }
 
     .content-info {
       @include flex-box(center, center, column, flex);
       width: 50%;
       height: 70vh;
+      min-height: 500px;
 
       span {
         font-size: 1.75rem;
@@ -41,6 +43,7 @@
       @include flex-box(center, center, column, flex);
       width: 50%;
       height: 70vh;
+      min-height: 500px;
 
       span {
         font-size: 1.75rem;
@@ -72,6 +75,7 @@
     .content-map {
       width: 50%;
       height: 70vh;
+      min-height: 500px;
     }
   }
 }

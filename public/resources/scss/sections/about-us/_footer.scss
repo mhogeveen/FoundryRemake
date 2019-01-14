@@ -2,6 +2,7 @@
   @include flex-box(space-around, center, column, flex);
   width: 100%;
   height: 15vh;
+  min-height: 100px;
   background-color: $blackish;
 
   h1 {
