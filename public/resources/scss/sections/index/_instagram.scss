@@ -2,6 +2,7 @@
   @include flex-box(center, center, row, flex);
   width: 100%;
   height: 60vh;
+  min-height: 500px;
 
   .instagram-container {
     @include flex-box(flex-start, center, row, flex);
