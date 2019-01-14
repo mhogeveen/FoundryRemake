@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+  // When .btn1 is clicked:
   $('.btn1').click(function() {
     $('.rev1').animate({'left': '15%'});
     $('.rev2,.rev3').animate({'left': '100%'});
@@ -8,6 +9,7 @@ $(document).ready(function() {
     $('.btn2,.btn3').addClass('inactive');
   });
 
+  // When .btn2 is clicked:
   $('.btn2').click(function() {
     $('.rev1').animate({'left': '-100%'});
     $('.rev2').animate({'left': '15%'});
@@ -17,6 +19,7 @@ $(document).ready(function() {
     $('.btn2').addClass('active');
   });
 
+  // When .btn3 is clicked:
   $('.btn3').click(function() {
     $('.rev1,.rev2').animate({'left': '-100%'});
     $('.rev3').animate({'left': '15%'});
@@ -25,8 +28,10 @@ $(document).ready(function() {
     $('.btn3').addClass('active');
   });
 
+  // Click .btn1 on load of the page
   $('.btn1').trigger('click');
 
+  // Click review section buttons after set intervals
   setTimeout(function() {
     setInterval(function() {
       $('.btn1').trigger('click');
@@ -44,5 +49,15 @@ $(document).ready(function() {
       $('.btn3').trigger('click');
     }, 30000);
   }, 20000);
+
+  // Change the background color of the navigation section after scrolling down a set amount
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > $('#banner-section').height()) {
+      $('#navigation-section').addClass('navBackground')
+    }
+    if ($(window).scrollTop() < $('#banner-section').height()) {
+      $('#navigation-section').removeClass('navBackground')
+    }
+  });
 
 });

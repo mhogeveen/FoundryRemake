@@ -19,6 +19,9 @@
   background-color: #ffffff;
   border: 1px solid lightgray; }
 
+.navBackground {
+  background-color: #ffffff; }
+
 #header-section {
   justify-content: center;
   align-items: stretch;
@@ -59,8 +62,7 @@
         padding: 0 2rem 0 0; }
         #header-section #navigation-section ul a li {
           color: #1e1f26;
-          font-size: 1.25rem;
-          text-shadow: 2px 0 0 #ffffff; }
+          font-size: 1.25rem; }
   #header-section #banner-section {
     justify-content: flex-end;
     align-items: stretch;
