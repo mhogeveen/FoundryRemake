@@ -10,40 +10,46 @@
   background-position: center;
   background-attachment: fixed; }
   #header-section #navigation-section {
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: stretch;
     flex-direction: row;
     display: flex;
     position: fixed;
-    width: 80%;
+    width: 100%;
     height: 4rem;
     z-index: 10;
     border-bottom: 1px solid rgba(255, 255, 255, 0);
     background-color: rgba(255, 255, 255, 0);
     transition: all 400ms ease; }
-    @media screen and (max-width: 1500px) {
-      #header-section #navigation-section {
-        width: 90%; } }
-    @media screen and (max-width: 1300px) {
-      #header-section #navigation-section {
-        width: 100%; } }
-    #header-section #navigation-section a {
-      padding: 0 2rem; }
-      #header-section #navigation-section a h1 {
-        color: #1e1f26;
-        font-size: 3rem;
-        font-weight: 500;
-        text-shadow: 4px 0 0 #ffffff; }
-    #header-section #navigation-section ul {
-      justify-content: flex-start;
-      align-items: stretch;
+    #header-section #navigation-section .navigation-container {
+      justify-content: space-between;
+      align-items: center;
       flex-direction: row;
-      display: flex; }
-      #header-section #navigation-section ul a {
-        padding: 0 2rem 0 0; }
-        #header-section #navigation-section ul a li {
+      display: flex;
+      width: 80%; }
+      @media screen and (max-width: 1500px) {
+        #header-section #navigation-section .navigation-container {
+          width: 90%; } }
+      @media screen and (max-width: 1300px) {
+        #header-section #navigation-section .navigation-container {
+          width: 100%; } }
+      #header-section #navigation-section .navigation-container a {
+        padding: 0 2rem; }
+        #header-section #navigation-section .navigation-container a h1 {
           color: #1e1f26;
-          font-size: 1.25rem; }
+          font-size: 3rem;
+          font-weight: 500;
+          text-shadow: 4px 0 0 #ffffff; }
+      #header-section #navigation-section .navigation-container ul {
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-direction: row;
+        display: flex; }
+        #header-section #navigation-section .navigation-container ul a {
+          padding: 0 2rem 0 0; }
+          #header-section #navigation-section .navigation-container ul a li {
+            color: #1e1f26;
+            font-size: 1.25rem; }
   #header-section #banner-section {
     justify-content: flex-end;
     align-items: stretch;
