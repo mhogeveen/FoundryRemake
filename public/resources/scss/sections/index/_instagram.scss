@@ -3,70 +3,70 @@
   width: 100%;
   height: 60vh;
   min-height: 500px;
+}
 
-  .instagram-container {
-    @include flex-box(flex-start, center, row, flex);
-    width: 95%;
-    height: 75%;
+.instagram-container {
+  @include flex-box(flex-start, center, row, flex);
+  width: 95%;
+  height: 75%;
+}
 
-    .instagram-posts {
-      @include flex-box(center, center, row, flex);
-      flex-wrap: wrap;
-      width: 60%;
-      height: 110%;
+.instagram-posts {
+  @include flex-box(center, center, row, flex);
+  flex-wrap: wrap;
+  width: 60%;
+  height: 110%;
 
-      a {
-        width: 20vh;
-        height: 20vh;
-        margin: 1rem;
-      }
+  a {
+    width: 20vh;
+    height: 20vh;
+    margin: 1rem;
+  }
+}
 
-      .instagram-img {
-        width: 100%;
-        height: 100%;
-        border: $border-white;
-        transition: transform 200ms ease;
+.instagram-img {
+  width: 100%;
+  height: 100%;
+  border: $border-white;
+  transition: transform 200ms ease;
 
-        &:hover {
-          transform: scale(1.6);
-        }
-      }
+  &:hover {
+    transform: scale(1.6);
+  }
+}
 
-      // Different Images can be added per img class
-      .img1,
-      .img2,
-      .img3,
-      .img4,
-      .img5,
-      .img6 {
-        background-image: url(../images/instagram-placeholder.jpg);
-        background-size: cover;
-      }
-    }
+// Different Images can be added per img class
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+  background-image: url(../images/instagram-placeholder.jpg);
+  background-size: cover;
+}
 
-    .instagram-tekst {
-      @include flex-box(center, center, column, flex);
-      width: 40%;
-      height: 100%;
-      border: $border-lightgray;
-      text-align: center;
+.instagram-tekst {
+  @include flex-box(center, center, column, flex);
+  width: 40%;
+  height: 100%;
+  border: $border-lightgray;
+  text-align: center;
 
-      h3 {
-        font-size: 5rem;
-        font-weight: 100;
-        padding: 0 0 1.5rem 0;
-      }
+  h3 {
+    font-size: 5rem;
+    font-weight: 100;
+    padding: 0 0 1.5rem 0;
+  }
 
-      span {
-        width: 90%;
-        padding: 1.5rem 0 0 0;
-        border-top: $border-lightgray;
+  span {
+    width: 90%;
+    padding: 1.5rem 0 0 0;
+    border-top: $border-lightgray;
 
-        a {
-          color: $black;
-          font-weight: 600;
-        }
-      }
+    a {
+      color: $black;
+      font-weight: 600;
     }
   }
 }

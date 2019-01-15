@@ -198,60 +198,65 @@
   width: 100%;
   height: 60vh;
   min-height: 500px; }
-  #instagram-section .instagram-container {
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    display: flex;
-    width: 95%;
-    height: 75%; }
-    #instagram-section .instagram-container .instagram-posts {
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      display: flex;
-      flex-wrap: wrap;
-      width: 60%;
-      height: 110%; }
-      #instagram-section .instagram-container .instagram-posts a {
-        width: 20vh;
-        height: 20vh;
-        margin: 1rem; }
-      #instagram-section .instagram-container .instagram-posts .instagram-img {
-        width: 100%;
-        height: 100%;
-        border: 1px solid #ffffff;
-        transition: transform 200ms ease; }
-        #instagram-section .instagram-container .instagram-posts .instagram-img:hover {
-          transform: scale(1.6); }
-      #instagram-section .instagram-container .instagram-posts .img1,
-      #instagram-section .instagram-container .instagram-posts .img2,
-      #instagram-section .instagram-container .instagram-posts .img3,
-      #instagram-section .instagram-container .instagram-posts .img4,
-      #instagram-section .instagram-container .instagram-posts .img5,
-      #instagram-section .instagram-container .instagram-posts .img6 {
-        background-image: url(../images/instagram-placeholder.jpg);
-        background-size: cover; }
-    #instagram-section .instagram-container .instagram-tekst {
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      display: flex;
-      width: 40%;
-      height: 100%;
-      border: 1px solid #d3d3d3;
-      text-align: center; }
-      #instagram-section .instagram-container .instagram-tekst h3 {
-        font-size: 5rem;
-        font-weight: 100;
-        padding: 0 0 1.5rem 0; }
-      #instagram-section .instagram-container .instagram-tekst span {
-        width: 90%;
-        padding: 1.5rem 0 0 0;
-        border-top: 1px solid #d3d3d3; }
-        #instagram-section .instagram-container .instagram-tekst span a {
-          color: #000000;
-          font-weight: 600; }
+
+.instagram-container {
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  width: 95%;
+  height: 75%; }
+
+.instagram-posts {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 110%; }
+  .instagram-posts a {
+    width: 20vh;
+    height: 20vh;
+    margin: 1rem; }
+
+.instagram-img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ffffff;
+  transition: transform 200ms ease; }
+  .instagram-img:hover {
+    transform: scale(1.6); }
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+  background-image: url(../images/instagram-placeholder.jpg);
+  background-size: cover; }
+
+.instagram-tekst {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 40%;
+  height: 100%;
+  border: 1px solid #d3d3d3;
+  text-align: center; }
+  .instagram-tekst h3 {
+    font-size: 5rem;
+    font-weight: 100;
+    padding: 0 0 1.5rem 0; }
+  .instagram-tekst span {
+    width: 90%;
+    padding: 1.5rem 0 0 0;
+    border-top: 1px solid #d3d3d3; }
+    .instagram-tekst span a {
+      color: #000000;
+      font-weight: 600; }
 
 #review-section {
   justify-content: center;
