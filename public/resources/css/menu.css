@@ -81,56 +81,66 @@
   display: flex;
   width: 100%;
   padding: 4rem 0; }
-  #menu-section .menu-column {
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-direction: column;
-    display: flex;
-    width: 45%;
-    padding: 0 1rem; }
-    #menu-section .menu-column .menu-info,
-    #menu-section .menu-column .menu-main,
-    #menu-section .menu-column .menu-drinks,
-    #menu-section .menu-column .menu-entree,
-    #menu-section .menu-column .menu-dessert,
-    #menu-section .menu-column .menu-pastries {
-      justify-content: flex-start;
-      align-items: center;
-      flex-direction: column;
-      display: flex;
-      border: 1px solid #d3d3d3;
-      margin: 1rem 0;
-      padding: 2rem; }
-    #menu-section .menu-column .menu-info {
-      justify-content: flex-start;
-      align-items: stretch;
-      flex-direction: column;
-      display: flex;
-      color: #1e1f26; }
-    #menu-section .menu-column .menu-main,
-    #menu-section .menu-column .menu-pastries {
-      background-color: #1e1f26;
-      color: #ffffff; }
-    #menu-section .menu-column .menu-drinks,
-    #menu-section .menu-column .menu-entree {
-      background-color: #f8f8f8;
-      color: #1e1f26; }
-    #menu-section .menu-column .menu-entree {
-      margin: 7rem 0 0 0; }
-    #menu-section .menu-column .menu-dessert {
-      color: #1e1f26; }
-    #menu-section .menu-column .course {
-      font-size: 3rem;
-      font-weight: 500;
-      padding: 1rem 0; }
-    #menu-section .menu-column .dish {
-      font-size: 0.9rem;
-      font-weight: 700;
-      padding: 1rem 0; }
-    #menu-section .menu-column .description {
-      font-size: 0.8rem;
-      font-weight: 400;
-      padding: 1rem 0; }
+
+.menu-column {
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  display: flex;
+  width: 45%;
+  padding: 0 1rem; }
+
+.menu-info,
+.menu-main,
+.menu-drinks,
+.menu-entree,
+.menu-dessert,
+.menu-pastries {
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  border: 1px solid #d3d3d3;
+  margin: 1rem 0;
+  padding: 2rem; }
+
+.menu-info {
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  display: flex;
+  color: #1e1f26; }
+
+.menu-main,
+.menu-pastries {
+  background-color: #1e1f26;
+  color: #ffffff; }
+
+.menu-drinks,
+.menu-entree {
+  background-color: #f8f8f8;
+  color: #1e1f26; }
+
+.menu-entree {
+  margin: 7rem 0 0 0; }
+
+.menu-dessert {
+  color: #1e1f26; }
+
+.course {
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 1rem 0; }
+
+.dish {
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 1rem 0; }
+
+.description {
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 1rem 0; }
 
 #footer-section {
   justify-content: space-around;
