@@ -109,69 +109,73 @@
   width: 100%;
   height: 100vh;
   min-height: 750px; }
-  #hook-section .hook-container {
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    display: flex;
-    width: 85%;
-    height: 100%; }
-    #hook-section .hook-container .hook-story {
-      justify-content: space-around;
-      align-items: flex-start;
-      flex-direction: column;
-      display: flex;
-      width: 60%;
-      height: 65%;
-      border: 1px solid #d3d3d3;
-      position: relative;
-      top: -3rem; }
-      #hook-section .hook-container .hook-story h3 {
-        font-size: 5rem;
-        font-weight: 100;
-        padding: 2rem 2rem 0 2rem; }
-      #hook-section .hook-container .hook-story p {
-        padding: 2rem;
-        line-height: 1.5; }
-      #hook-section .hook-container .hook-story a {
-        padding: 1rem 2rem;
-        margin: 0 0 0 2rem;
-        background-color: #383a3e;
-        color: #ffffff;
-        font-weight: 500; }
-    #hook-section .hook-container .hook-images {
-      justify-content: center;
-      align-items: stretch;
-      flex-direction: column;
-      display: flex;
-      width: 40%;
-      height: 100%; }
-      #hook-section .hook-container .hook-images .hook-img1 {
-        position: relative;
-        right: -2rem;
-        height: 35%;
-        background-image: url(../images/hook1.jpg);
-        background-size: cover; }
-      #hook-section .hook-container .hook-images .hook-img2 {
-        position: relative;
-        top: 2rem;
-        right: 7rem;
-        height: 35%;
-        background-image: url(../images/hook2.jpg);
-        background-size: cover; }
-  #hook-section .hook-next {
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: row;
-    display: flex;
-    position: absolute;
-    bottom: 0; }
-    #hook-section .hook-next a i {
-      color: #1e1f26;
-      height: 1rem;
-      transition: transform 300ms linear; }
-      #hook-section .hook-next a i:hover {
-        transform: scale(1.2); }
+
+.hook-container {
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  width: 85%;
+  height: 100%; }
+
+.hook-story {
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+  width: 60%;
+  height: 65%;
+  border: 1px solid #d3d3d3;
+  position: relative;
+  top: -3rem; }
+  .hook-story h3 {
+    font-size: 5rem;
+    font-weight: 100;
+    padding: 2rem 2rem 0 2rem; }
+  .hook-story p {
+    padding: 2rem;
+    line-height: 1.5; }
+  .hook-story a {
+    padding: 1rem 2rem;
+    margin: 0 0 0 2rem;
+    background-color: #383a3e;
+    color: #ffffff;
+    font-weight: 500; }
+
+.hook-images {
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  display: flex;
+  width: 40%;
+  height: 100%; }
+  .hook-images .hook-img1 {
+    position: relative;
+    right: -2rem;
+    height: 35%;
+    background-image: url(../images/hook1.jpg);
+    background-size: cover; }
+  .hook-images .hook-img2 {
+    position: relative;
+    top: 2rem;
+    right: 7rem;
+    height: 35%;
+    background-image: url(../images/hook2.jpg);
+    background-size: cover; }
+
+.hook-next {
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  display: flex;
+  position: absolute;
+  bottom: 0; }
+  .hook-next a i {
+    color: #1e1f26;
+    height: 1rem;
+    transition: transform 300ms linear; }
+    .hook-next a i:hover {
+      transform: scale(1.2); }
 
 #parallax-section {
   justify-content: center;

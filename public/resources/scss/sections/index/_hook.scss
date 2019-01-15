@@ -4,79 +4,79 @@
   width: 100%;
   height: 100vh;
   min-height: 750px;
+}
 
-  .hook-container {
-    @include flex-box(flex-start, center, row, flex);
-    width: 85%;
-    height: 100%;
+.hook-container {
+  @include flex-box(flex-start, center, row, flex);
+  width: 85%;
+  height: 100%;
+}
 
-    .hook-story {
-      @include flex-box(space-around, flex-start, column, flex);
-      width: 60%;
-      height: 65%;
-      border: $border-lightgray;
-      position: relative;
-      top: -3rem;
+.hook-story {
+  @include flex-box(space-around, flex-start, column, flex);
+  width: 60%;
+  height: 65%;
+  border: $border-lightgray;
+  position: relative;
+  top: -3rem;
 
-      h3 {
-        font-size: 5rem;
-        font-weight: 100;
-        padding: 2rem 2rem 0 2rem;
-      }
-
-      p {
-        padding: 2rem;
-        line-height: 1.5;
-      }
-
-      a {
-        padding: 1rem 2rem;
-        margin: 0 0 0 2rem;
-        background-color: $gray;
-        color: $white;
-        font-weight: 500;
-      }
-    }
-
-    .hook-images {
-      @include flex-box(center, stretch, column, flex);
-      width: 40%;
-      height: 100%;
-
-      .hook-img1 {
-        position: relative;
-        right: -2rem;
-        height: 35%;
-        background-image: url(../images/hook1.jpg);
-        background-size: cover;
-      }
-
-      .hook-img2 {
-        position: relative;
-        top: 2rem;
-        right: 7rem;
-        height: 35%;
-        background-image: url(../images/hook2.jpg);
-        background-size: cover;
-      }
-    }
+  h3 {
+    font-size: 5rem;
+    font-weight: 100;
+    padding: 2rem 2rem 0 2rem;
   }
 
-  .hook-next {
-    @include flex-box(center, stretch, row, flex);
-    position: absolute;
-    bottom: 0;
+  p {
+    padding: 2rem;
+    line-height: 1.5;
+  }
 
-    a {
+  a {
+    padding: 1rem 2rem;
+    margin: 0 0 0 2rem;
+    background-color: $gray;
+    color: $white;
+    font-weight: 500;
+  }
+}
 
-      i {
-        color: $blackish;
-        height: 1rem;
-        transition: transform 300ms linear;
+.hook-images {
+  @include flex-box(center, stretch, column, flex);
+  width: 40%;
+  height: 100%;
 
-        &:hover {
-          transform: scale(1.2);
-        }
+  .hook-img1 {
+    position: relative;
+    right: -2rem;
+    height: 35%;
+    background-image: url(../images/hook1.jpg);
+    background-size: cover;
+  }
+
+  .hook-img2 {
+    position: relative;
+    top: 2rem;
+    right: 7rem;
+    height: 35%;
+    background-image: url(../images/hook2.jpg);
+    background-size: cover;
+  }
+}
+
+.hook-next {
+  @include flex-box(center, stretch, row, flex);
+  position: absolute;
+  bottom: 0;
+
+  a {
+
+    i {
+      color: $blackish;
+      height: 1rem;
+      transition: transform 300ms linear;
+
+      &:hover {
+        transform: scale(1.2);
       }
     }
   }
