@@ -4,11 +4,36 @@
   height: 15vh;
   min-height: 100px;
   background-color: $blackish;
+}
 
-  h1 {
+.footer-info {
+  @include flex-box(center, center, row, flex);
+  position: relative;
+  width: 100%;
+
+  .info-address {
+    @include flex-box(flex-end, center, row, flex);
+    width: 45%;
     color: $white;
+  }
+
+  .info-logo {
+    @include flex-box(center, center, row, flex);
+    width: 10%;
     font-size: 2rem;
     font-weight: 500;
+    color: $white;
+  }
+
+  .info-contact {
+    @include flex-box(flex-start, center, row, flex);
+    width: 45%;
+
+    a {
+      color: $white;
+      padding: 0 0.5rem;
+      text-decoration: underline;
+    }
   }
 }
 
