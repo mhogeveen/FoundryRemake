@@ -10,33 +10,33 @@
     font-size: 2rem;
     font-weight: 500;
   }
+}
 
-  .footer-copyright-social {
-    @include flex-box(space-between, stretch, row, flex);
-    width: 90%;
+.footer-copyright-social {
+  @include flex-box(space-between, stretch, row, flex);
+  width: 90%;
 
-    span {
-      font-size: 0.8rem;
+  span {
+    font-size: 0.8rem;
+    color: $white;
+  }
+}
+
+.footer-social {
+
+  a {
+    padding: 0 1rem;
+
+    i {
       color: $white;
     }
-
-    .footer-social {
-
-      a {
-        padding: 0 1rem;
-
-        i {
-          color: $white;
-        }
-      }
-    }
   }
+}
 
-  .footer-top {
-    border: 2px solid $white;
-    padding: 0.3rem 1.1rem;
-    color: $white;
-    font-size: 0.9rem;
-    font-weight: 700;
-  }
+.footer-top {
+  border: 2px solid $white;
+  padding: 0.3rem 1.1rem;
+  color: $white;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
