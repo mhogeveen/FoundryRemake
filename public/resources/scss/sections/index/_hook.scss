@@ -14,7 +14,7 @@
       @include flex-box(space-around, flex-start, column, flex);
       width: 60%;
       height: 65%;
-      border: 1px solid lightgray;
+      border: $border-lightgray;
       position: relative;
       top: -3rem;
 

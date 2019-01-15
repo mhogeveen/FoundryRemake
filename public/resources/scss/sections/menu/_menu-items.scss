@@ -15,7 +15,7 @@
     .menu-dessert,
     .menu-pastries {
       @include flex-box(flex-start, center, column, flex);
-      border: 1px solid lightgray;
+      border: $border-lightgray;
       margin: 1rem 0;
       padding: 2rem;
     }

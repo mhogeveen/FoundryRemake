@@ -94,7 +94,7 @@
       align-items: center;
       flex-direction: column;
       display: flex;
-      border: 1px solid lightgray;
+      border: 1px solid #d3d3d3;
       margin: 1rem 0;
       padding: 2rem; }
     #menu-section .menu-column .menu-info {

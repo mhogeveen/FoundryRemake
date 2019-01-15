@@ -9,90 +9,96 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
-  #header-section #navigation-section {
-    justify-content: center;
+
+#navigation-section {
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 400ms ease; }
+
+.navigation-container {
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  width: 80%; }
+  @media screen and (max-width: 1500px) {
+    .navigation-container {
+      width: 90%; } }
+  @media screen and (max-width: 1300px) {
+    .navigation-container {
+      width: 100%; } }
+  .navigation-container a {
+    padding: 0 2rem; }
+    .navigation-container a h1 {
+      color: #1e1f26;
+      font-size: 3rem;
+      font-weight: 500;
+      text-shadow: 4px 0 0 #ffffff; }
+  .navigation-container ul {
+    justify-content: flex-start;
     align-items: stretch;
     flex-direction: row;
-    display: flex;
-    position: fixed;
-    width: 100%;
-    height: 4rem;
-    z-index: 10;
-    border-bottom: 1px solid rgba(255, 255, 255, 0);
-    background-color: rgba(255, 255, 255, 0);
-    transition: all 400ms ease; }
-    #header-section #navigation-section .navigation-container {
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row;
-      display: flex;
-      width: 80%; }
-      @media screen and (max-width: 1500px) {
-        #header-section #navigation-section .navigation-container {
-          width: 90%; } }
-      @media screen and (max-width: 1300px) {
-        #header-section #navigation-section .navigation-container {
-          width: 100%; } }
-      #header-section #navigation-section .navigation-container a {
-        padding: 0 2rem; }
-        #header-section #navigation-section .navigation-container a h1 {
-          color: #1e1f26;
-          font-size: 3rem;
-          font-weight: 500;
-          text-shadow: 4px 0 0 #ffffff; }
-      #header-section #navigation-section .navigation-container ul {
-        justify-content: flex-start;
-        align-items: stretch;
-        flex-direction: row;
-        display: flex; }
-        #header-section #navigation-section .navigation-container ul a {
-          padding: 0 2rem 0 0; }
-          #header-section #navigation-section .navigation-container ul a li {
-            color: #1e1f26;
-            font-size: 1.25rem; }
-  #header-section #banner-section {
-    justify-content: flex-end;
-    align-items: stretch;
-    flex-direction: column;
-    display: flex;
-    width: 100%; }
-    #header-section #banner-section .banner-title {
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      display: flex;
-      width: 100%;
-      height: 100%; }
-      #header-section #banner-section .banner-title h1 {
-        position: relative;
-        right: 4rem;
-        font-size: 6rem;
-        font-weight: 500; }
-      #header-section #banner-section .banner-title h2 {
-        position: relative;
-        right: -2rem;
-        font-size: 1.1rem;
-        color: #blackish; }
-    #header-section #banner-section .banner-social {
-      justify-content: center;
-      align-items: stretch;
-      flex-direction: row;
-      display: flex; }
-      #header-section #banner-section .banner-social a {
-        padding: 0 1rem; }
-        #header-section #banner-section .banner-social a i {
-          color: #1e1f26; }
-    #header-section #banner-section .banner-next {
-      justify-content: center;
-      align-items: stretch;
-      flex-direction: row;
-      display: flex; }
-      #header-section #banner-section .banner-next a i {
+    display: flex; }
+    .navigation-container ul a {
+      padding: 0 2rem 0 0; }
+      .navigation-container ul a li {
         color: #1e1f26;
-        height: 1rem;
-        transition: transform 300ms linear; }
-        #header-section #banner-section .banner-next a i:hover {
-          transform: scale(1.2); }
+        font-size: 1.25rem; }
+
+#banner-section {
+  justify-content: flex-end;
+  align-items: stretch;
+  flex-direction: column;
+  display: flex;
+  width: 100%; }
+
+.banner-title {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100%; }
+  .banner-title h1 {
+    position: relative;
+    right: 4rem;
+    font-size: 6rem;
+    font-weight: 500; }
+  .banner-title h2 {
+    position: relative;
+    right: -2rem;
+    font-size: 1.1rem;
+    color: #blackish; }
+
+.banner-social {
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  display: flex; }
+  .banner-social a {
+    padding: 0 1rem; }
+    .banner-social a i {
+      color: #1e1f26; }
+
+.banner-next {
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  display: flex; }
+  .banner-next a i {
+    color: #1e1f26;
+    height: 1rem;
+    transition: transform 300ms linear; }
+    .banner-next a i:hover {
+      transform: scale(1.2); }
 
 #hook-section {
   justify-content: center;
@@ -117,7 +123,7 @@
       display: flex;
       width: 60%;
       height: 65%;
-      border: 1px solid lightgray;
+      border: 1px solid #d3d3d3;
       position: relative;
       top: -3rem; }
       #hook-section .hook-container .hook-story h3 {
@@ -229,7 +235,7 @@
       display: flex;
       width: 40%;
       height: 100%;
-      border: 1px solid lightgray;
+      border: 1px solid #d3d3d3;
       text-align: center; }
       #instagram-section .instagram-container .instagram-tekst h3 {
         font-size: 5rem;
@@ -238,7 +244,7 @@
       #instagram-section .instagram-container .instagram-tekst span {
         width: 90%;
         padding: 1.5rem 0 0 0;
-        border-top: 1px solid lightgray; }
+        border-top: 1px solid #d3d3d3; }
         #instagram-section .instagram-container .instagram-tekst span a {
           color: #000000;
           font-weight: 600; }

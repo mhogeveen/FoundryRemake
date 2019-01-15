@@ -5,10 +5,14 @@ $blackish: #1e1f26;
 $gray: #383a3e;
 $creme: #e3d2bc;
 $light-creme: #f8f8f8;
+$light-gray: #d3d3d3;
 $light-brown: #8c6a5e;
 $dark-brown: #735149;
 
-// Breakpoints
+// Standard border-radius
+$border-white: 1px solid $white;
+$border-lightgray: 1px solid $light-gray;
 
+// Breakpoints
 $breakpoint1: 1500px;
 $breakpoint2: 1300px;
