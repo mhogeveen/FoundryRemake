@@ -215,26 +215,29 @@
   flex-wrap: wrap;
   width: 60%;
   height: 110%; }
-  .instagram-posts a {
-    width: 20vh;
-    height: 20vh;
-    margin: 1rem; }
 
 .instagram-img {
-  width: 100%;
-  height: 100%;
+  width: 20vh;
+  height: 20vh;
+  margin: 1rem;
   border: 1px solid #ffffff;
-  transition: transform 200ms ease; }
+  transition: transform 200ms ease;
+  cursor: pointer; }
+  .instagram-img img {
+    display: none; }
   .instagram-img:hover {
     transform: scale(1.6); }
 
-.img1,
+.img1 {
+  background-image: url(../images/instagram-img1.jpg);
+  background-size: cover; }
+
 .img2,
 .img3,
 .img4,
 .img5,
 .img6 {
-  background-image: url(../images/instagram-placeholder.jpg);
+  background-image: url(../images/instagram-img2.jpg);
   background-size: cover; }
 
 .instagram-tekst {
@@ -392,6 +395,31 @@
   color: #1e1f26;
   font-size: 0.9rem;
   font-weight: 700; }
+
+#modal-section {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.modal-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  color: #ffffff; }
+
+.modal-content {
+  border: 1px solid #ffffff;
+  width: 60vh;
+  height: 60vh; }
 
 html {
   width: 100%;

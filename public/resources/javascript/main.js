@@ -62,4 +62,19 @@ $(document).ready(function() {
     }
   });
 
+  // Modal functionality
+  // When the cross is clicked close the modal section
+  $('.modal-close').click(function() {
+    $('#modal-section').css('display','none');
+  });
+
+
+
+  // Display modal section when clicking on a instagram section image
+  $('.img1').click(function() {
+    $('#modal-section').css('display','flex');
+    $('.modal-content').addClass('img1');
+    return false;
+  });
+
 });

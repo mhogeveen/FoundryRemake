@@ -1,0 +1,24 @@
+#modal-section {
+  @include flex-box(center, center, row, none);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  color: $white;
+}
+
+.modal-content {
+  border: $border-white;
+  width: 60vh;
+  height: 60vh;
+}

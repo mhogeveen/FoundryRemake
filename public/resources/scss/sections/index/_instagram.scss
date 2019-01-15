@@ -17,18 +17,26 @@
   width: 60%;
   height: 110%;
 
-  a {
-    width: 20vh;
-    height: 20vh;
-    margin: 1rem;
-  }
+  // a {
+  //   width: 20vh;
+  //   height: 20vh;
+  //   margin: 1rem;
+  // }
 }
 
 .instagram-img {
-  width: 100%;
-  height: 100%;
+  width: 20vh;
+  height: 20vh;
+  margin: 1rem;
+  // width: 100%;
+  // height: 100%;
   border: $border-white;
   transition: transform 200ms ease;
+  cursor: pointer;
+
+  img {
+    display: none;
+  }
 
   &:hover {
     transform: scale(1.6);
@@ -36,13 +44,17 @@
 }
 
 // Different Images can be added per img class
-.img1,
+.img1 {
+  background-image: url(../images/instagram-img1.jpg);
+  background-size: cover;
+}
+
 .img2,
 .img3,
 .img4,
 .img5,
 .img6 {
-  background-image: url(../images/instagram-placeholder.jpg);
+  background-image: url(../images/instagram-img2.jpg);
   background-size: cover;
 }
 
