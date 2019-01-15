@@ -6,60 +6,60 @@
   min-height: 300px;
   @include parallax-bg(url(../images/bg-reviews.jpg));
   overflow: hidden;
+}
 
-  .review-container {
-    @include flex-box(center, center, row, flex);
-    text-align: center;
-    width: 70%;
-    height: 75%;
-    border: $border-white;
+.review-container {
+  @include flex-box(center, center, row, flex);
+  text-align: center;
+  width: 70%;
+  height: 75%;
+  border: $border-white;
+}
 
-    .review-tekst {
-      @include flex-box(center, center, column, flex);
-      padding: 2rem;
+.review-tekst {
+  @include flex-box(center, center, column, flex);
+  padding: 2rem;
 
-      p {
-        font-size: 2rem;
-        font-weight: 300;
-        color: $white;
-      }
-
-      span {
-        color: $white;
-        padding: 2rem 0 0 0;
-        font-weight: 600;
-      }
-    }
+  p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: $white;
   }
 
-  .rev1 {
-    position: absolute;
-    left: -100%;
+  span {
+    color: $white;
+    padding: 2rem 0 0 0;
+    font-weight: 600;
   }
+}
 
-  .rev2 {
-    position: absolute;
-    left: 15%;
-  }
+.rev1 {
+  position: absolute;
+  left: -100%;
+}
 
-  .rev3 {
-    position: absolute;
-    left: 100%;
-  }
+.rev2 {
+  position: absolute;
+  left: 15%;
+}
 
-  .review-controls {
-    @include flex-box(flex-start, stretch, row, flex);
-    position: absolute;
-    bottom: 1rem;
+.rev3 {
+  position: absolute;
+  left: 100%;
+}
 
-    .rev-button {
-      position: relative;
-      width: 0.8rem;
-      height: 0.8rem;
-      border-radius: 50%;
-      background-color: $white;
-      margin: 1rem 1rem 0 1rem;
-      cursor: pointer;
-    }
-  }
+.review-controls {
+  @include flex-box(flex-start, stretch, row, flex);
+  position: absolute;
+  bottom: 1rem;
+}
+
+.rev-button {
+  position: relative;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: $white;
+  margin: 1rem 1rem 0 1rem;
+  cursor: pointer;
 }

@@ -272,53 +272,60 @@
   background-position: center;
   background-attachment: fixed;
   overflow: hidden; }
-  #review-section .review-container {
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    display: flex;
-    text-align: center;
-    width: 70%;
-    height: 75%;
-    border: 1px solid #ffffff; }
-    #review-section .review-container .review-tekst {
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      display: flex;
-      padding: 2rem; }
-      #review-section .review-container .review-tekst p {
-        font-size: 2rem;
-        font-weight: 300;
-        color: #ffffff; }
-      #review-section .review-container .review-tekst span {
-        color: #ffffff;
-        padding: 2rem 0 0 0;
-        font-weight: 600; }
-  #review-section .rev1 {
-    position: absolute;
-    left: -100%; }
-  #review-section .rev2 {
-    position: absolute;
-    left: 15%; }
-  #review-section .rev3 {
-    position: absolute;
-    left: 100%; }
-  #review-section .review-controls {
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-direction: row;
-    display: flex;
-    position: absolute;
-    bottom: 1rem; }
-    #review-section .review-controls .rev-button {
-      position: relative;
-      width: 0.8rem;
-      height: 0.8rem;
-      border-radius: 50%;
-      background-color: #ffffff;
-      margin: 1rem 1rem 0 1rem;
-      cursor: pointer; }
+
+.review-container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  text-align: center;
+  width: 70%;
+  height: 75%;
+  border: 1px solid #ffffff; }
+
+.review-tekst {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  padding: 2rem; }
+  .review-tekst p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #ffffff; }
+  .review-tekst span {
+    color: #ffffff;
+    padding: 2rem 0 0 0;
+    font-weight: 600; }
+
+.rev1 {
+  position: absolute;
+  left: -100%; }
+
+.rev2 {
+  position: absolute;
+  left: 15%; }
+
+.rev3 {
+  position: absolute;
+  left: 100%; }
+
+.review-controls {
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
+  display: flex;
+  position: absolute;
+  bottom: 1rem; }
+
+.rev-button {
+  position: relative;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 1rem 1rem 0 1rem;
+  cursor: pointer; }
 
 #footer-section {
   justify-content: space-around;
