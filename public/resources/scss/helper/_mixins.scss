@@ -4,3 +4,10 @@
   flex-direction: $flex-direction;
   display: $display;
 }
+
+@mixin parallax-bg($img-location, $background-size: cover, $background-position: center, $background-attachment: fixed) {
+  background-image: $img-location;
+  background-size: $background-size;
+  background-position: $background-position;
+  background-attachment: $background-attachment;
+}
