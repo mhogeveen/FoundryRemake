@@ -94,7 +94,8 @@
     flex-direction: row;
     display: flex;
     width: 45%;
-    color: #ffffff; }
+    color: #ffffff;
+    font-size: 0.9rem; }
   .footer-info .info-logo {
     justify-content: center;
     align-items: center;
@@ -111,6 +112,7 @@
     display: flex;
     width: 45%; }
     .footer-info .info-contact a {
+      font-size: 0.9rem;
       color: #ffffff;
       padding: 0 0.5rem;
       text-decoration: underline; }

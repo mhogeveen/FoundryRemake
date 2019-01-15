@@ -13,6 +13,7 @@
   .info-address {
     @include flex-box(flex-end, center, row, flex);
     width: 45%;
+    font-size: 0.9rem;
   }
 
   .info-logo {
@@ -28,6 +29,7 @@
     width: 45%;
 
     a {
+      font-size: 0.9rem;
       padding: 0 0.5rem;
       color: $blackish;
       text-decoration: underline;

@@ -15,6 +15,7 @@
     @include flex-box(flex-end, center, row, flex);
     width: 45%;
     color: $white;
+    font-size: 0.9rem;
   }
 
   .info-logo {
@@ -30,6 +31,7 @@
     width: 45%;
 
     a {
+      font-size: 0.9rem;
       color: $white;
       padding: 0 0.5rem;
       text-decoration: underline;
