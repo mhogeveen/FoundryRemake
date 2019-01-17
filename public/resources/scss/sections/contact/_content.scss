@@ -46,8 +46,8 @@
 }
 
 .content-social {
-  @include flex-box(center, center, column, flex);
-  width: 50%;
+  @include flex-box(flex-start, center, column, flex);
+  width: 25%;
   height: 70vh;
   min-height: 500px;
 
@@ -55,7 +55,7 @@
     font-size: 1.75rem;
     color: $blackish;
     width: 70%;
-    padding: 1rem 0;
+    padding: 5rem 0 0 0;
   }
 
   p {
@@ -75,6 +75,33 @@
     i {
       color: $blackish;
     }
+  }
+}
+
+.content-hours {
+  @include flex-box(flex-start, center, column, flex);
+  width: 25%;
+  height: 70vh;
+  min-height: 500px;
+
+  span {
+    font-size: 1.75rem;
+    color: $blackish;
+    padding: 5rem 0 0 0;
+  }
+
+  p {
+    color: $gray;
+    line-height: 1.5;
+    padding: 0 0.4rem;
+  }
+}
+
+.timetable {
+  @include flex-box(center, center, row, flex);
+
+  .timetable-row {
+    padding: 1rem 0 0 0;
   }
 }
 
