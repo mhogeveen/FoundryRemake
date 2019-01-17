@@ -66,9 +66,8 @@ $(document).ready(function() {
   // When the cross is clicked close the modal section
   $('.modal-close').click(function() {
     $('#modal-section').css('display','none');
+    $('.modal-content').removeClass('img1 img2 img3 img4 img5 img6');
   });
-
-
 
   // Display modal section when clicking on a instagram section image
   $('.img1').click(function() {
@@ -76,5 +75,36 @@ $(document).ready(function() {
     $('.modal-content').addClass('img1');
     return false;
   });
+
+  $('.img2').click(function() {
+    $('#modal-section').css('display','flex');
+    $('.modal-content').addClass('img2');
+    return false;
+  });
+
+  $('.img3').click(function() {
+    $('#modal-section').css('display','flex');
+    $('.modal-content').addClass('img3');
+    return false;
+  });
+
+  $('.img4').click(function() {
+    $('#modal-section').css('display','flex');
+    $('.modal-content').addClass('img4');
+    return false;
+  });
+
+  $('.img5').click(function() {
+    $('#modal-section').css('display','flex');
+    $('.modal-content').addClass('img5');
+    return false;
+  });
+
+  $('.img6').click(function() {
+    $('#modal-section').css('display','flex');
+    $('.modal-content').addClass('img6');
+    return false;
+  });
+
 
 });
