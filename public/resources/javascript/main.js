@@ -67,42 +67,49 @@ $(document).ready(function() {
   $('.modal-close').click(function() {
     $('#modal-section').css('display','none');
     $('.modal-content').removeClass('img1 img2 img3 img4 img5 img6');
+    $("a[href^='https://www.instagram.com']").attr('href', 'tmp-link');
   });
 
   // Display modal section when clicking on a instagram section image
   $('.img1').click(function() {
     $('#modal-section').css('display','flex');
     $('.modal-content').addClass('img1');
+    $("a[href='tmp-link']").attr('href', 'https://www.instagram.com');
     return false;
   });
 
   $('.img2').click(function() {
     $('#modal-section').css('display','flex');
     $('.modal-content').addClass('img2');
+    $("a[href='tmp-link']").attr('href', 'https://www.instagram.com');
     return false;
   });
 
   $('.img3').click(function() {
     $('#modal-section').css('display','flex');
     $('.modal-content').addClass('img3');
+    $("a[href='tmp-link']").attr('href', 'https://www.instagram.com');
     return false;
   });
 
   $('.img4').click(function() {
     $('#modal-section').css('display','flex');
     $('.modal-content').addClass('img4');
+    $("a[href='tmp-link']").attr('href', 'https://www.instagram.com');
     return false;
   });
 
   $('.img5').click(function() {
     $('#modal-section').css('display','flex');
     $('.modal-content').addClass('img5');
+    $("a[href='tmp-link']").attr('href', 'https://www.instagram.com');
     return false;
   });
 
   $('.img6').click(function() {
     $('#modal-section').css('display','flex');
     $('.modal-content').addClass('img6');
+    $("a[href='tmp-link']").attr('href', 'https://www.instagram.com');
     return false;
   });
 

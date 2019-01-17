@@ -1,5 +1,5 @@
 #modal-section {
-  @include flex-box(center, center, row, none);
+  @include flex-box(center, center, column, none);
   position: fixed;
   top: 0;
   left: 0;
@@ -21,4 +21,16 @@
   border: $border-white;
   width: 60vh;
   height: 60vh;
+}
+
+.modal-caption {
+  color: $white;
+  padding: 1rem;
+
+  a {
+    border: $border-white;
+    background-color: $blackish;
+    color: $white;
+    padding: 0.5rem 1rem;
+  }
 }

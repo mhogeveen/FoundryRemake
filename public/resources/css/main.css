@@ -411,7 +411,7 @@
 #modal-section {
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   display: none;
   position: fixed;
   top: 0;
@@ -432,6 +432,15 @@
   border: 1px solid #ffffff;
   width: 60vh;
   height: 60vh; }
+
+.modal-caption {
+  color: #ffffff;
+  padding: 1rem; }
+  .modal-caption a {
+    border: 1px solid #ffffff;
+    background-color: #1e1f26;
+    color: #ffffff;
+    padding: 0.5rem 1rem; }
 
 html {
   width: 100%;
