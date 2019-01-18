@@ -71,7 +71,7 @@
     @media screen and (max-width: 600px) {
       .navigation-container i {
         display: block;
-        padding: 0 2rem 0 0; } }
+        margin: 0 2rem 0 0; } }
 
 #banner-section {
   justify-content: flex-end;
