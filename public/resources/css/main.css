@@ -54,7 +54,9 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        top: 4rem; } }
+        top: 4rem;
+        background-color: #ffffff;
+        border: 1px solid #d3d3d3; } }
     .navigation-container ul a {
       padding: 0 2rem 0 0; }
       @media screen and (max-width: 600px) {

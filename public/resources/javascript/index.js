@@ -50,18 +50,6 @@ $(document).ready(function() {
     }, 30000);
   }, 20000);
 
-  // Change the background color of the navigation section after scrolling down a set amount
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > $('#banner-section').height()) {
-      $('#navigation-section').css('border-bottom', '1px solid lightgray');
-      $('#navigation-section').css('background-color', 'white');
-    }
-    if ($(window).scrollTop() < $('#banner-section').height()) {
-      $('#navigation-section').css('border-bottom', '1px solid rgba(255, 255, 255, 0)');
-      $('#navigation-section').css('background-color', 'rgba(255, 255, 255, 0)');
-    }
-  });
-
   // Modal functionality
   // When the cross is clicked close the modal section
   $('.modal-close').click(function() {
