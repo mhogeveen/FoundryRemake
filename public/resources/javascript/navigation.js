@@ -4,29 +4,39 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if ($(window).width() > 600) {
       if ($(window).scrollTop() > $('#banner-section').height()) {
-        $('#navigation-section').css('border-bottom', '1px solid lightgray');
-        $('#navigation-section').css('background-color', 'white');
+        $('#navigation-section').css({'border-bottom': '1px solid lightgray', 'background-color': 'white'});
       }
       if ($(window).scrollTop() < $('#banner-section').height()) {
-        $('#navigation-section').css('border-bottom', '1px solid rgba(255, 255, 255, 0)');
-        $('#navigation-section').css('background-color', 'rgba(255, 255, 255, 0)');
+        $('#navigation-section').css({'border-bottom': '1px solid rgba(255, 255, 255, 0)', 'background-color': 'rgba(255, 255, 255, 0)'});
       }
     } else {
-      $('#navigation-section').css('border-bottom', '1px solid lightgray');
-      $('#navigation-section').css('background-color', 'white');
+      $('#navigation-section').css({'border-bottom': '1px solid lightgray', 'background-color': 'white'});
     }
   });
 
-  // Check if the window width is or is below the navigation breakpoint
+  // Check if the window width is or is below the navigation breakpoint on page load
   function checkWidth() {
     var windowSize = $(window).width();
     if (windowSize <= 600) {
-      $('#navigation-section').css('border-bottom', '1px solid lightgray');
-      $('#navigation-section').css('background-color', 'white');
+      $('#navigation-section').css({'border-bottom': '1px solid lightgray', 'background-color': 'white'});
     }
   }
 
   checkWidth();
+
+  // Check the resizing of the window if width goes over the navigation breakpoint
+  $(window).resize(function() {
+    var windowSize = $(window).width();
+    if (windowSize > 600) {
+      $('#navigation-section').css({'border-bottom': '1px solid rgba(255, 255, 255, 0)', 'background-color': 'rgba(255, 255, 255, 0)'});
+      $('.navigation-container ul').css('opacity', '1');
+      $('.navigation-container i').removeClass('fa-bars fa-times');
+      $('.navigation-container i').addClass('fa-bars');
+    } else if (windowSize <= 600) {
+      $('#navigation-section').css({'border-bottom': '1px solid lightgray', 'background-color': 'white'});
+      $('.navigation-container ul').css('opacity', '0');
+    }
+  });
 
   // Show mobile view navigation menu on click of 'hamburger' icon
   $('.fa-bars, .fa-times').click(function() {
