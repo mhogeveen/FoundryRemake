@@ -1,0 +1,61 @@
+#info-section {
+  @include flex-box(center, stretch, row, flex);
+  width: 100%;
+}
+
+.info-container {
+  @include flex-box(flex-start, stretch, row, flex);
+  width: 85%;
+}
+
+.info-address-tel {
+  @include flex-box(flex-start, center, column, flex);
+  width: 50%;
+  margin: 0 1.5rem 3rem 0;
+  padding: 2rem;
+  border: $border-lightgray;
+
+  span {
+    font-size: 1.75rem;
+    color: $blackish;
+    padding: 0 0 2rem 0;
+  }
+
+  p {
+    color: $gray;
+    line-height: 1.5;
+    padding: 1rem;
+
+    a {
+      color: $gray;
+    }
+  }
+}
+
+.info-hours {
+  @include flex-box(flex-start, center, column, flex);
+  width: 50%;
+  margin: 0 0 3rem 1.5rem;
+  padding: 2rem;
+  border: $border-lightgray;
+
+  span {
+    font-size: 1.75rem;
+    color: $blackish;
+    padding: 0 0 2rem 0;
+  }
+
+  p {
+    color: $gray;
+    line-height: 1.5;
+    padding: 0 1rem;
+  }
+}
+
+.timetable {
+  @include flex-box(center, center, row, flex);
+
+  .timetable-row {
+
+  }
+}
