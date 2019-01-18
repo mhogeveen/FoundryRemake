@@ -54,8 +54,4 @@
 
 .timetable {
   @include flex-box(center, center, row, flex);
-
-  .timetable-row {
-
-  }
 }
