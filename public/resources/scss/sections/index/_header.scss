@@ -107,6 +107,10 @@
 .banner-social {
   @include flex-box(center, stretch, row, flex);
 
+  @media screen and (max-width: $breakpoint3) {
+    padding: 0 0 2rem 0;
+  }
+
   a {
     padding: 0 1rem;
 
@@ -118,6 +122,10 @@
 
 .banner-next {
   @include flex-box(center, stretch, row, flex);
+
+  @media screen and (max-width: $breakpoint3) {
+    display: none;
+  }
 
   a {
 

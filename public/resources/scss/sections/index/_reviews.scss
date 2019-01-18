@@ -6,6 +6,11 @@
   min-height: 300px;
   @include parallax-bg(url(../images/bg-reviews.jpg));
   overflow: hidden;
+
+  @media screen and (max-width: $breakpoint3) {
+    height: auto;
+    min-height: 450px;
+  }
 }
 
 .review-container {
@@ -14,6 +19,10 @@
   width: 70%;
   height: 75%;
   border: $border-white;
+
+  @media screen and (max-width: $breakpoint3) {
+    height: auto;
+  }
 }
 
 .review-tekst {

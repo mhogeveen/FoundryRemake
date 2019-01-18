@@ -104,6 +104,9 @@
   align-items: stretch;
   flex-direction: row;
   display: flex; }
+  @media screen and (max-width: 850px) {
+    .banner-social {
+      padding: 0 0 2rem 0; } }
   .banner-social a {
     padding: 0 1rem; }
     .banner-social a i {
@@ -114,6 +117,9 @@
   align-items: stretch;
   flex-direction: row;
   display: flex; }
+  @media screen and (max-width: 850px) {
+    .banner-next {
+      display: none; } }
   .banner-next a i {
     color: #1e1f26;
     height: 1rem;
@@ -130,6 +136,10 @@
   width: 100%;
   height: 100vh;
   min-height: 750px; }
+  @media screen and (max-width: 850px) {
+    #hook-section {
+      height: auto;
+      min-height: 0; } }
 
 .hook-container {
   justify-content: flex-start;
@@ -138,6 +148,11 @@
   display: flex;
   width: 85%;
   height: 100%; }
+  @media screen and (max-width: 850px) {
+    .hook-container {
+      flex-direction: column;
+      padding: 3rem 0;
+      height: auto; } }
 
 .hook-story {
   justify-content: space-around;
@@ -149,6 +164,13 @@
   border: 1px solid #d3d3d3;
   position: relative;
   top: -3rem; }
+  @media screen and (max-width: 850px) {
+    .hook-story {
+      position: static;
+      top: auto;
+      height: auto;
+      justify-content: flex-start;
+      align-items: stretch; } }
   .hook-story h3 {
     font-size: 5rem;
     font-weight: 100;
@@ -162,6 +184,9 @@
     background-color: #383a3e;
     color: #ffffff;
     font-weight: 500; }
+    @media screen and (max-width: 850px) {
+      .hook-story a {
+        margin: 2rem; } }
 
 .hook-images {
   justify-content: center;
@@ -170,6 +195,9 @@
   display: flex;
   width: 40%;
   height: 100%; }
+  @media screen and (max-width: 850px) {
+    .hook-images {
+      display: none; } }
   .hook-images .hook-img1 {
     position: relative;
     right: -2rem;
@@ -191,6 +219,9 @@
   display: flex;
   position: absolute;
   bottom: 0; }
+  @media screen and (max-width: 850px) {
+    .hook-next {
+      display: none; } }
   .hook-next a i {
     color: #1e1f26;
     height: 1rem;
@@ -210,6 +241,9 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
+  @media screen and (max-width: 850px) {
+    #parallax-section {
+      height: 30vh; } }
 
 #instagram-section {
   justify-content: center;
@@ -219,6 +253,9 @@
   width: 100%;
   height: 60vh;
   min-height: 500px; }
+  @media screen and (max-width: 850px) {
+    #instagram-section {
+      height: auto; } }
 
 .instagram-container {
   justify-content: flex-start;
@@ -248,6 +285,9 @@
     display: none; }
   .instagram-img:hover {
     transform: scale(1.2); }
+    @media screen and (max-width: 850px) {
+      .instagram-img:hover {
+        transform: scale(1); } }
 
 .img1 {
   background-image: url(../images/instagram-img1.jpg);
@@ -282,14 +322,24 @@
   height: 100%;
   border: 1px solid #d3d3d3;
   text-align: center; }
+  @media screen and (max-width: 850px) {
+    .instagram-tekst {
+      height: auto; } }
   .instagram-tekst h3 {
     font-size: 5rem;
     font-weight: 100;
     padding: 0 0 1.5rem 0; }
+    @media screen and (max-width: 850px) {
+      .instagram-tekst h3 {
+        font-size: 3.5rem;
+        padding: 1.5rem 0 1.5rem 0; } }
   .instagram-tekst span {
     width: 90%;
     padding: 1.5rem 0 0 0;
     border-top: 1px solid #d3d3d3; }
+    @media screen and (max-width: 850px) {
+      .instagram-tekst span {
+        padding: 1.5rem 0 1.5rem 0; } }
     .instagram-tekst span a {
       color: #000000;
       font-weight: 600; }
@@ -308,6 +358,10 @@
   background-position: center;
   background-attachment: fixed;
   overflow: hidden; }
+  @media screen and (max-width: 850px) {
+    #review-section {
+      height: auto;
+      min-height: 450px; } }
 
 .review-container {
   justify-content: center;
@@ -318,6 +372,9 @@
   width: 70%;
   height: 75%;
   border: 1px solid #ffffff; }
+  @media screen and (max-width: 850px) {
+    .review-container {
+      height: auto; } }
 
 .review-tekst {
   justify-content: center;
@@ -385,7 +442,8 @@
     flex-direction: row;
     display: flex;
     width: 45%;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    padding: 0 1rem 0 0; }
   .footer-info .info-logo {
     justify-content: center;
     align-items: center;
@@ -400,7 +458,8 @@
     align-items: center;
     flex-direction: row;
     display: flex;
-    width: 45%; }
+    width: 45%;
+    padding: 0 0 0 1rem; }
     .footer-info .info-contact a {
       font-size: 0.9rem;
       padding: 0 0.5rem;
@@ -458,10 +517,8 @@
   color: #ffffff;
   padding: 1rem; }
   .modal-caption a {
-    border: 1px solid #ffffff;
-    background-color: #1e1f26;
     color: #ffffff;
-    padding: 0.5rem 1rem; }
+    text-decoration: underline; }
 
 html {
   width: 100%;
