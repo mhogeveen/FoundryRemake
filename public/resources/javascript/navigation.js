@@ -31,14 +31,10 @@ $(document).ready(function() {
   // Show mobile view navigation menu on click of 'hamburger' icon
   $('.fa-bars, .fa-times').click(function() {
     $('.navigation-container i').toggleClass('fa-bars fa-times');
-     if ($('.navigation-container').find('ul').css('opacity') == '0') {
-       $('.navigation-container').find('ul').animate({'opacity': '1'});
-       //$('.navigation-container').find('i').removeClass('fa-bars');
-       //$('.navigation-container').find('i').addClass('fa-times');
-     } else if ($('.navigation-container').find('ul').css('opacity') == '1') {
-       $('.navigation-container').find('ul').animate({'opacity': '0'});
-       //$('.navigation-container').find('i').removeClass('fa-times');
-       //$('.navigation-container').find('i').addClass('fa-bars');
+     if ($('.navigation-container ul').css('opacity') == '0') {
+       $('.navigation-container ul').animate({'opacity': '1'});
+     } else if ($('.navigation-container ul').css('opacity') == '1') {
+       $('.navigation-container ul').animate({'opacity': '0'});
      }
   });
 
