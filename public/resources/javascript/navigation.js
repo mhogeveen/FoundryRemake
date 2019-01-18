@@ -17,15 +17,18 @@ $(document).ready(function() {
     }
   });
 
-  // Show mobile view navigation menu on click of 'hamburger' icon
-  // $('.fa-bars').click(function() {
-  //    if ($('.navigation-container').find('ul').css('display') == 'none') {
-  //      $('.navigation-container').find('ul').css('display', 'flex').fadeIn();
-  //    } else if ($('.navigation-container').find('ul').css('display') == 'flex') {
-  //      $('.navigation-container').find('ul').css('display', 'none').fadeOut();
-  //    }
-  // });
+  // Check if the window width is or is below the navigation breakpoint
+  function checkWidth() {
+    var windowSize = $(window).width();
+    if (windowSize <= 600) {
+      $('#navigation-section').css('border-bottom', '1px solid lightgray');
+      $('#navigation-section').css('background-color', 'white');
+    }
+  }
 
+  checkWidth();
+
+  // Show mobile view navigation menu on click of 'hamburger' icon
   $('.fa-bars').click(function() {
      if ($('.navigation-container').find('ul').css('opacity') == '0') {
        $('.navigation-container').find('ul').animate({'opacity': '1'});
