@@ -92,6 +92,9 @@
   .banner-title h1 {
     font-size: 6rem;
     font-weight: 200; }
+    @media screen and (max-width: 700px) {
+      .banner-title h1 {
+        font-size: 4rem; } }
 
 #menu-section {
   justify-content: center;
