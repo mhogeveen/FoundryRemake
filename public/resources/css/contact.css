@@ -91,7 +91,7 @@
     font-weight: 200; }
     @media screen and (max-width: 700px) {
       .banner-title h1 {
-        font-size: 4rem; } }
+        font-size: 3.5rem; } }
 
 #footer-section {
   justify-content: space-around;
