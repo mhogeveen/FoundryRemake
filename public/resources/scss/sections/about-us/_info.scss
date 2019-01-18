@@ -6,6 +6,10 @@
 .info-container {
   @include flex-box(flex-start, stretch, row, flex);
   width: 85%;
+
+  @media screen and (max-width: $breakpoint-menu) {
+    flex-direction: column;
+  }
 }
 
 .info-address-tel {

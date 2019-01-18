@@ -88,8 +88,7 @@
   height: 100%; }
   .banner-title h1 {
     font-size: 6rem;
-    font-weight: 200;
-    white-space: pre; }
+    font-weight: 200; }
     @media screen and (max-width: 700px) {
       .banner-title h1 {
         font-size: 4rem; } }
@@ -155,6 +154,9 @@
   flex-direction: row;
   display: flex;
   width: 85%; }
+  @media screen and (max-width: 600px) {
+    .info-container {
+      flex-direction: column; } }
 
 .info-address-tel {
   justify-content: flex-start;
