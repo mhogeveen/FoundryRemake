@@ -48,11 +48,32 @@
     align-items: stretch;
     flex-direction: row;
     display: flex; }
+    @media screen and (max-width: 600px) {
+      .navigation-container ul {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        opacity: 0;
+        top: 4rem;
+        background-color: #ffffff;
+        border-top: 1px solid #d3d3d3;
+        border-bottom: 1px solid #d3d3d3; } }
     .navigation-container ul a {
       padding: 0 2rem 0 0; }
+      @media screen and (max-width: 600px) {
+        .navigation-container ul a {
+          padding: 0.5rem 0; } }
       .navigation-container ul a li {
         color: #1e1f26;
         font-size: 1.25rem; }
+  .navigation-container i {
+    display: none;
+    cursor: pointer; }
+    @media screen and (max-width: 600px) {
+      .navigation-container i {
+        display: block;
+        margin: 0 2rem 0 0; } }
 
 #banner-section {
   justify-content: flex-end;

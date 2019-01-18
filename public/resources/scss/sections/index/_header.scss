@@ -43,7 +43,6 @@
     @include flex-box(flex-start, stretch, row, flex);
 
     @media screen and (max-width: $breakpoint-menu) {
-      //display: none;
       position: absolute;
       flex-direction: column;
       align-items: center;
