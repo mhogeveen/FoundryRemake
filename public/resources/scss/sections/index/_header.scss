@@ -43,14 +43,16 @@
     @include flex-box(flex-start, stretch, row, flex);
 
     @media screen and (max-width: $breakpoint-menu) {
-      display: none;
+      //display: none;
       position: absolute;
       flex-direction: column;
       align-items: center;
       width: 100%;
+      opacity: 0;
       top: 4rem;
       background-color: $white;
-      border: $border-lightgray;
+      border-top: $border-lightgray;
+      border-bottom: $border-lightgray;
     }
 
     a {
