@@ -184,6 +184,9 @@
     @media screen and (max-width: 650px) {
       .hook-story h3 {
         font-size: 4rem; } }
+    @media screen and (max-width: 500px) {
+      .hook-story h3 {
+        font-size: 3.5rem; } }
   .hook-story p {
     padding: 2rem;
     line-height: 1.5; }
@@ -412,6 +415,9 @@
   flex-direction: column;
   display: flex;
   padding: 2rem; }
+  @media screen and (max-width: 500px) {
+    .review-tekst {
+      padding: 1rem; } }
   .review-tekst p {
     font-size: 2rem;
     font-weight: 300;
@@ -426,6 +432,10 @@
     color: #ffffff;
     padding: 2rem 0 0 0;
     font-weight: 600; }
+    @media screen and (max-width: 500px) {
+      .review-tekst span {
+        font-size: 0.8rem;
+        padding: 1rem 0 0 0; } }
 
 .rev1 {
   position: absolute;
@@ -579,8 +589,8 @@
 .modal-content {
   position: relative;
   border: 1px solid #ffffff;
-  width: 60vh;
-  height: 60vh; }
+  width: 60vw;
+  height: 60vw; }
 
 .modal-caption {
   color: #ffffff;
