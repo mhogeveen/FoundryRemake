@@ -13,6 +13,10 @@
   @include flex-box(flex-start, center, row, flex);
   width: 95%;
   height: 75%;
+
+  @media screen and (max-width: $breakpoint5) {
+    width: 80%;
+  }
 }
 
 .instagram-posts {
@@ -20,6 +24,11 @@
   flex-wrap: wrap;
   width: 60%;
   height: 110%;
+
+  @media screen and (max-width: $breakpoint5) {
+    flex-direction: column;
+    width: 40%;
+  }
 }
 
 .instagram-img {
@@ -57,11 +66,19 @@
 .img3 {
   background-image: url(../images/instagram-img3.jpg);
   background-size: cover;
+
+  @media screen and (max-width: $breakpoint5) {
+    display: none;
+  }
 }
 
 .img4 {
   background-image: url(../images/instagram-img4.jpg);
   background-size: cover;
+
+  @media screen and (max-width: $breakpoint5) {
+    display: none;
+  }
 }
 
 .img5 {
@@ -91,6 +108,10 @@
 
   @media screen and (max-width: $breakpoint3) {
     height: auto;
+  }
+
+  @media screen and (max-width: $breakpoint5) {
+    width: 60%;
   }
 
   h3 {
