@@ -214,6 +214,9 @@
   height: 15vh;
   min-height: 100px;
   background-color: #1e1f26; }
+  @media screen and (max-width: 550px) {
+    #footer-section {
+      height: auto; } }
 
 .footer-info {
   justify-content: center;
@@ -222,6 +225,9 @@
   display: flex;
   position: relative;
   width: 100%; }
+  @media screen and (max-width: 550px) {
+    .footer-info {
+      flex-direction: column; } }
   .footer-info .info-address {
     justify-content: flex-end;
     align-items: center;
@@ -229,7 +235,12 @@
     display: flex;
     width: 45%;
     color: #ffffff;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    padding: 0 1rem 0 0; }
+    @media screen and (max-width: 550px) {
+      .footer-info .info-address {
+        display: none;
+        width: auto; } }
   .footer-info .info-logo {
     justify-content: center;
     align-items: center;
@@ -239,12 +250,21 @@
     font-size: 2rem;
     font-weight: 500;
     color: #ffffff; }
+    @media screen and (max-width: 550px) {
+      .footer-info .info-logo {
+        width: auto;
+        padding: 0.5rem 0; } }
   .footer-info .info-contact {
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     display: flex;
-    width: 45%; }
+    width: 45%;
+    padding: 0 0 0 1rem; }
+    @media screen and (max-width: 550px) {
+      .footer-info .info-contact {
+        padding: 0.5rem 0;
+        width: auto; } }
     .footer-info .info-contact a {
       font-size: 0.9rem;
       color: #ffffff;
@@ -257,10 +277,21 @@
   flex-direction: row;
   display: flex;
   width: 90%; }
+  @media screen and (max-width: 550px) {
+    .footer-copyright-social {
+      flex-direction: column;
+      align-items: center;
+      width: auto; } }
   .footer-copyright-social span {
     font-size: 0.8rem;
     color: #ffffff; }
+    @media screen and (max-width: 550px) {
+      .footer-copyright-social span {
+        padding: 0.5rem 0; } }
 
+@media screen and (max-width: 550px) {
+  .footer-social {
+    padding: 0.5rem 0; } }
 .footer-social a {
   padding: 0 1rem; }
   .footer-social a i {
@@ -272,6 +303,9 @@
   color: #ffffff;
   font-size: 0.9rem;
   font-weight: 700; }
+  @media screen and (max-width: 550px) {
+    .footer-top {
+      margin: 0.5rem 0; } }
 
 html {
   width: 100%;
