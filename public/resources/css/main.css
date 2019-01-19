@@ -262,7 +262,7 @@
   width: 100%;
   height: 60vh;
   min-height: 500px; }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 1050px) {
     #instagram-section {
       height: auto; } }
 
@@ -273,9 +273,10 @@
   display: flex;
   width: 95%;
   height: 75%; }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 1050px) {
     .instagram-container {
-      width: 80%; } }
+      flex-direction: column;
+      padding: 2rem 0; } }
 
 .instagram-posts {
   justify-content: center;
@@ -285,10 +286,10 @@
   flex-wrap: wrap;
   width: 60%;
   height: 110%; }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 1050px) {
     .instagram-posts {
-      flex-direction: column;
-      width: 40%; } }
+      width: 80%;
+      height: auto; } }
 
 .instagram-img {
   width: 20vh;
@@ -316,28 +317,28 @@
 .img3 {
   background-image: url(../images/instagram-img3.jpg);
   background-size: cover; }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 550px) {
     .img3 {
       display: none; } }
 
 .img4 {
   background-image: url(../images/instagram-img4.jpg);
   background-size: cover; }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 550px) {
     .img4 {
       display: none; } }
 
 .img5 {
   background-image: url(../images/instagram-img5.jpg);
   background-size: cover; }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 550px) {
     .img5 {
       display: none; } }
 
 .img6 {
   background-image: url(../images/instagram-img6.jpg);
   background-size: cover; }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 550px) {
     .img6 {
       display: none; } }
 
@@ -350,17 +351,15 @@
   height: 100%;
   border: 1px solid #d3d3d3;
   text-align: center; }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 1050px) {
     .instagram-tekst {
-      height: auto; } }
-  @media screen and (max-width: 650px) {
-    .instagram-tekst {
-      width: 60%; } }
+      height: auto;
+      width: 80%; } }
   .instagram-tekst h3 {
     font-size: 5rem;
     font-weight: 100;
     padding: 0 0 1.5rem 0; }
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 1050px) {
       .instagram-tekst h3 {
         font-size: 3.5rem;
         padding: 1.5rem 0 1.5rem 0; } }
@@ -368,9 +367,9 @@
     width: 90%;
     padding: 1.5rem 0 0 0;
     border-top: 1px solid #d3d3d3; }
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 1050px) {
       .instagram-tekst span {
-        padding: 1.5rem 0 1.5rem 0; } }
+        padding: 1.5rem 0; } }
     .instagram-tekst span a {
       color: #000000;
       font-weight: 600; }
@@ -417,7 +416,7 @@
     font-size: 2rem;
     font-weight: 300;
     color: #ffffff; }
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 1050px) {
       .review-tekst p {
         font-size: 1.75rem; } }
     @media screen and (max-width: 650px) {
@@ -465,6 +464,9 @@
   width: 100%;
   height: 15vh;
   min-height: 100px; }
+  @media screen and (max-width: 550px) {
+    #footer-section {
+      height: auto; } }
 
 .footer-info {
   justify-content: center;
@@ -473,6 +475,9 @@
   display: flex;
   position: relative;
   width: 100%; }
+  @media screen and (max-width: 550px) {
+    .footer-info {
+      flex-direction: column; } }
   .footer-info .info-address {
     justify-content: flex-end;
     align-items: center;
@@ -481,6 +486,10 @@
     width: 45%;
     font-size: 0.9rem;
     padding: 0 1rem 0 0; }
+    @media screen and (max-width: 550px) {
+      .footer-info .info-address {
+        display: none;
+        width: auto; } }
   .footer-info .info-logo {
     justify-content: center;
     align-items: center;
@@ -490,6 +499,10 @@
     font-size: 2rem;
     font-weight: 500;
     width: 10%; }
+    @media screen and (max-width: 550px) {
+      .footer-info .info-logo {
+        width: auto;
+        padding: 0.5rem 0; } }
   .footer-info .info-contact {
     justify-content: flex-start;
     align-items: center;
@@ -497,6 +510,10 @@
     display: flex;
     width: 45%;
     padding: 0 0 0 1rem; }
+    @media screen and (max-width: 550px) {
+      .footer-info .info-contact {
+        padding: 0.5rem 0;
+        width: auto; } }
     .footer-info .info-contact a {
       font-size: 0.9rem;
       padding: 0 0.5rem;
@@ -509,10 +526,21 @@
   flex-direction: row;
   display: flex;
   width: 90%; }
+  @media screen and (max-width: 550px) {
+    .footer-copyright-social {
+      flex-direction: column;
+      align-items: center;
+      width: auto; } }
   .footer-copyright-social span {
     font-size: 0.8rem;
     color: #1e1f26; }
+    @media screen and (max-width: 550px) {
+      .footer-copyright-social span {
+        padding: 0.5rem 0; } }
 
+@media screen and (max-width: 550px) {
+  .footer-social {
+    padding: 0.5rem 0; } }
 .footer-social a {
   padding: 0 1rem; }
   .footer-social a i {
@@ -524,6 +552,9 @@
   color: #1e1f26;
   font-size: 0.9rem;
   font-weight: 700; }
+  @media screen and (max-width: 550px) {
+    .footer-top {
+      margin: 0.5rem 0; } }
 
 #modal-section {
   justify-content: center;

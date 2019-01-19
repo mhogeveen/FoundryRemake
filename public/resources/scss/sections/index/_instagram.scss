@@ -4,7 +4,7 @@
   height: 60vh;
   min-height: 500px;
 
-  @media screen and (max-width: $breakpoint3) {
+  @media screen and (max-width: $breakpoint2-5) {
     height: auto;
   }
 }
@@ -14,8 +14,9 @@
   width: 95%;
   height: 75%;
 
-  @media screen and (max-width: $breakpoint5) {
-    width: 80%;
+  @media screen and (max-width: $breakpoint2-5) {
+    flex-direction: column;
+    padding: 2rem 0;
   }
 }
 
@@ -25,9 +26,9 @@
   width: 60%;
   height: 110%;
 
-  @media screen and (max-width: $breakpoint5) {
-    flex-direction: column;
-    width: 40%;
+  @media screen and (max-width: $breakpoint2-5) {
+    width: 80%;
+    height: auto;
   }
 }
 
@@ -67,7 +68,7 @@
   background-image: url(../images/instagram-img3.jpg);
   background-size: cover;
 
-  @media screen and (max-width: $breakpoint5) {
+  @media screen and (max-width: $breakpoint6) {
     display: none;
   }
 }
@@ -76,7 +77,7 @@
   background-image: url(../images/instagram-img4.jpg);
   background-size: cover;
 
-  @media screen and (max-width: $breakpoint5) {
+  @media screen and (max-width: $breakpoint6) {
     display: none;
   }
 }
@@ -85,7 +86,7 @@
   background-image: url(../images/instagram-img5.jpg);
   background-size: cover;
 
-  @media screen and (max-width: $breakpoint4) {
+  @media screen and (max-width: $breakpoint6) {
     display: none;
   }
 }
@@ -94,7 +95,7 @@
   background-image: url(../images/instagram-img6.jpg);
   background-size: cover;
 
-  @media screen and (max-width: $breakpoint4) {
+  @media screen and (max-width: $breakpoint6) {
     display: none;
   }
 }
@@ -106,12 +107,9 @@
   border: $border-lightgray;
   text-align: center;
 
-  @media screen and (max-width: $breakpoint3) {
+  @media screen and (max-width: $breakpoint2-5) {
     height: auto;
-  }
-
-  @media screen and (max-width: $breakpoint5) {
-    width: 60%;
+    width: 80%;
   }
 
   h3 {
@@ -119,7 +117,7 @@
     font-weight: 100;
     padding: 0 0 1.5rem 0;
 
-    @media screen and (max-width: $breakpoint3) {
+    @media screen and (max-width: $breakpoint2-5) {
       font-size: 3.5rem;
       padding: 1.5rem 0 1.5rem 0;
     }
@@ -130,8 +128,8 @@
     padding: 1.5rem 0 0 0;
     border-top: $border-lightgray;
 
-    @media screen and (max-width: $breakpoint3) {
-      padding: 1.5rem 0 1.5rem 0;
+    @media screen and (max-width: $breakpoint2-5) {
+      padding: 1.5rem 0;
     }
 
     a {
