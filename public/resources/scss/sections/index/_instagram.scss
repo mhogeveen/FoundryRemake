@@ -67,11 +67,19 @@
 .img5 {
   background-image: url(../images/instagram-img5.jpg);
   background-size: cover;
+
+  @media screen and (max-width: $breakpoint4) {
+    display: none;
+  }
 }
 
 .img6 {
   background-image: url(../images/instagram-img6.jpg);
   background-size: cover;
+
+  @media screen and (max-width: $breakpoint4) {
+    display: none;
+  }
 }
 
 .instagram-tekst {

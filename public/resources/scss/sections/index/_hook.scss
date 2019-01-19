@@ -36,7 +36,11 @@
     top: auto;
     height: auto;
     justify-content: flex-start;
-    align-items: stretch;
+    align-items: flex-start;
+  }
+
+  @media screen and (max-width: $breakpoint4) {
+    width: 80%;
   }
 
   h3 {
