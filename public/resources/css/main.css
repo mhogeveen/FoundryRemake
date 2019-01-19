@@ -420,6 +420,9 @@
     @media screen and (max-width: 850px) {
       .review-tekst p {
         font-size: 1.75rem; } }
+    @media screen and (max-width: 650px) {
+      .review-tekst p {
+        font-size: 1.5rem; } }
   .review-tekst span {
     color: #ffffff;
     padding: 2rem 0 0 0;
@@ -537,12 +540,13 @@
 
 .modal-close {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: -2rem;
+  right: -2rem;
   cursor: pointer;
   color: #ffffff; }
 
 .modal-content {
+  position: relative;
   border: 1px solid #ffffff;
   width: 60vh;
   height: 60vh; }

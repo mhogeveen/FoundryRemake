@@ -37,6 +37,10 @@
     @media screen and (max-width: $breakpoint3) {
       font-size: 1.75rem;
     }
+
+    @media screen and (max-width: $breakpoint5) {
+      font-size: 1.5rem;
+    }
   }
 
   span {

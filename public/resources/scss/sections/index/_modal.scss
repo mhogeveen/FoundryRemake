@@ -11,13 +11,14 @@
 
 .modal-close {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: -2rem;
+  right: -2rem;
   cursor: pointer;
   color: $white;
 }
 
 .modal-content {
+  position: relative;
   border: $border-white;
   width: 60vh;
   height: 60vh;

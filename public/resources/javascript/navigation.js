@@ -39,7 +39,7 @@ $(document).ready(function() {
   });
 
   // Show mobile view navigation menu on click of 'hamburger' icon
-  $('.fa-bars, .fa-times').click(function() {
+  $('.menu-button').click(function() {
     $('.navigation-container i').toggleClass('fa-bars fa-times');
      if ($('.navigation-container ul').css('opacity') == '0') {
        $('.navigation-container ul').animate({'opacity': '1'});
