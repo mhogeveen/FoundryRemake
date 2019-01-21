@@ -2,12 +2,30 @@
   @include flex-box(center, stretch, row, flex);
   width: 100%;
   padding: 4rem 0;
+
+  @media screen and (max-width: $breakpoint2-5) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .menu-column {
   @include flex-box(flex-start, stretch, column, flex);
   width: 45%;
   padding: 0 1rem;
+
+  @media screen and (max-width: $breakpoint2-5) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: $breakpoint3) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: $breakpoint4) {
+    width: 90%;
+  }
 }
 
 .menu-info,
@@ -41,6 +59,10 @@
 
 .menu-entree {
   margin: 7rem 0 0 0;
+
+  @media screen and (max-width: $breakpoint2-5) {
+    margin: 1rem 0;
+  }
 }
 
 .menu-dessert {
