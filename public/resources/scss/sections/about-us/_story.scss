@@ -8,6 +8,11 @@
   @include flex-box(flex-start, center, row, flex);
   width: 85%;
   padding: 5rem 0 3rem 0;
+
+  @media screen and (max-width: $breakpoint3) {
+    justify-content: center;
+    padding: 5rem 0 5rem 0;
+  }
 }
 
 .story-content {
@@ -15,6 +20,14 @@
   width: 60%;
   border: $border-lightgray;
   position: relative;
+
+  @media screen and (max-width: $breakpoint3) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: $breakpoint4) {
+    width: 90%;
+  }
 
   h3 {
     font-size: 5rem;
@@ -36,6 +49,10 @@
   @include flex-box(flex-start, stretch, column, flex);
   width: 40%;
   height: 100%;
+
+  @media screen and (max-width: $breakpoint3) {
+    display: none;
+  }
 
   .story-img1 {
     position: relative;

@@ -111,6 +111,10 @@
   display: flex;
   width: 85%;
   padding: 5rem 0 3rem 0; }
+  @media screen and (max-width: 850px) {
+    .story-container {
+      justify-content: center;
+      padding: 5rem 0 5rem 0; } }
 
 .story-content {
   justify-content: flex-start;
@@ -120,6 +124,12 @@
   width: 60%;
   border: 1px solid #d3d3d3;
   position: relative; }
+  @media screen and (max-width: 850px) {
+    .story-content {
+      width: 80%; } }
+  @media screen and (max-width: 700px) {
+    .story-content {
+      width: 90%; } }
   .story-content h3 {
     font-size: 5rem;
     font-weight: 100;
@@ -137,6 +147,9 @@
   display: flex;
   width: 40%;
   height: 100%; }
+  @media screen and (max-width: 850px) {
+    .story-images {
+      display: none; } }
   .story-images .story-img1 {
     position: relative;
     height: 100%;
@@ -157,9 +170,11 @@
   flex-direction: row;
   display: flex;
   width: 85%; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 850px) {
     .info-container {
-      flex-direction: column; } }
+      flex-direction: column;
+      padding: 0 0 5rem 0;
+      align-items: center; } }
 
 .info-address-tel {
   justify-content: flex-start;
@@ -170,6 +185,14 @@
   margin: 0 1.5rem 3rem 0;
   padding: 2rem;
   border: 1px solid #d3d3d3; }
+  @media screen and (max-width: 850px) {
+    .info-address-tel {
+      width: 80%;
+      margin: 0 0 5rem 0;
+      padding: 2rem 0 0 0; } }
+  @media screen and (max-width: 700px) {
+    .info-address-tel {
+      width: 90%; } }
   .info-address-tel span {
     font-size: 1.75rem;
     color: #1e1f26;
@@ -190,6 +213,14 @@
   margin: 0 0 3rem 1.5rem;
   padding: 2rem;
   border: 1px solid #d3d3d3; }
+  @media screen and (max-width: 850px) {
+    .info-hours {
+      width: 80%;
+      margin: 0;
+      padding: 2rem 0 2rem 0; } }
+  @media screen and (max-width: 700px) {
+    .info-hours {
+      width: 90%; } }
   .info-hours span {
     font-size: 1.75rem;
     color: #1e1f26;
