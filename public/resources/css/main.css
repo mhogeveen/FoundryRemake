@@ -291,7 +291,7 @@
   height: 110%; }
   @media screen and (max-width: 1050px) {
     .instagram-posts {
-      width: 80%;
+      width: 100%;
       height: auto; } }
 
 .instagram-img {
@@ -594,7 +594,8 @@
 
 .modal-caption {
   color: #ffffff;
-  padding: 1rem; }
+  padding: 1rem;
+  text-align: center; }
   .modal-caption a {
     color: #ffffff;
     text-decoration: underline; }
