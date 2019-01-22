@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+  // Review section button functionality
   // When .btn1 is clicked:
   $('.btn1').click(function() {
     $('.rev1').animate({'left': '15%'});
@@ -31,7 +32,7 @@ $(document).ready(function() {
   // Click .btn1 on load of the page
   $('.btn1').trigger('click');
 
-  // Click review section buttons after set intervals
+  // Automatic clicks on review section buttons after set intervals
   setTimeout(function() {
     setInterval(function() {
       $('.btn1').trigger('click');
@@ -51,14 +52,14 @@ $(document).ready(function() {
   }, 20000);
 
   // Modal functionality
-  // When the cross is clicked close the modal section
+  // When the cross is clicked to close the modal section
   $('.modal-close').click(function() {
     $('#modal-section').css('display','none');
     $('.modal-content').removeClass('img1 img2 img3 img4 img5 img6');
     $("a[href^='https://www.instagram.com']").attr('href', 'tmp-link');
   });
 
-  // Display modal section when clicking on a instagram section image
+  // Display modal section when clicking on a instagram section images
   $('.img1').click(function() {
     $('#modal-section').css('display','flex');
     $('.modal-content').addClass('img1');
