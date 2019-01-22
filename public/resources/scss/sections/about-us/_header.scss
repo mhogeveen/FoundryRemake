@@ -4,6 +4,7 @@
   height: 40vh;
   min-height: 300px;
   background-color: $light-creme;
+  @include parallax-bg(url(../images/bg-header-about.jpg), cover, 0 -250px, fixed);
 }
 
 #navigation-section {

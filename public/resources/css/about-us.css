@@ -6,7 +6,11 @@
   width: 100%;
   height: 40vh;
   min-height: 300px;
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  background-image: url(../images/bg-header-about.jpg);
+  background-size: cover;
+  background-position: 0 -250px;
+  background-attachment: fixed; }
 
 #navigation-section {
   justify-content: center;
@@ -126,7 +130,8 @@
   position: relative; }
   @media screen and (max-width: 850px) {
     .story-content {
-      width: 80%; } }
+      width: 80%;
+      background-color: #f8f8f8; } }
   @media screen and (max-width: 700px) {
     .story-content {
       width: 90%; } }
@@ -184,7 +189,8 @@
   width: 50%;
   margin: 0 1.5rem 3rem 0;
   padding: 2rem;
-  border: 1px solid #d3d3d3; }
+  border: 1px solid #d3d3d3;
+  background-color: #f8f8f8; }
   @media screen and (max-width: 850px) {
     .info-address-tel {
       width: 80%;
@@ -212,7 +218,8 @@
   width: 50%;
   margin: 0 0 3rem 1.5rem;
   padding: 2rem;
-  border: 1px solid #d3d3d3; }
+  border: 1px solid #d3d3d3;
+  background-color: #f8f8f8; }
   @media screen and (max-width: 850px) {
     .info-hours {
       width: 80%;
