@@ -73,6 +73,10 @@
   font-size: 3rem;
   font-weight: 500;
   padding: 1rem 0;
+
+  @media screen and (max-width: $breakpoint7) {
+    font-size: 2.5rem;
+  }
 }
 
 .dish {
@@ -85,4 +89,5 @@
   font-size: 0.8rem;
   font-weight: 400;
   padding: 1rem 0;
+  text-align: center;
 }

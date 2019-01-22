@@ -176,6 +176,9 @@
   font-size: 3rem;
   font-weight: 500;
   padding: 1rem 0; }
+  @media screen and (max-width: 500px) {
+    .course {
+      font-size: 2.5rem; } }
 
 .dish {
   font-size: 0.9rem;
@@ -185,7 +188,8 @@
 .description {
   font-size: 0.8rem;
   font-weight: 400;
-  padding: 1rem 0; }
+  padding: 1rem 0;
+  text-align: center; }
 
 #footer-section {
   justify-content: space-around;
