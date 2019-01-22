@@ -27,7 +27,7 @@
   @media screen and (max-width: $breakpoint2-5) {
     width: 100%;
     height: auto;
-    min-height: 300px;
+    min-height: 250px;
     background-attachment: fixed;
   }
 }
@@ -44,6 +44,7 @@
     border: $border-lightgray;
     margin: 3rem 0 1.5rem 0;
     min-height: auto;
+    background-color: $light-creme;
   }
 
   @media screen and (max-width: $breakpoint-menu) {
@@ -91,6 +92,7 @@
     width: 70%;
     border: $border-lightgray;
     margin: 1.5rem 0;
+    background-color: $light-creme;
   }
 
   @media screen and (max-width: $breakpoint-menu) {
@@ -144,6 +146,7 @@
     width: 70%;
     border: $border-lightgray;
     margin: 1.5rem 0;
+    background-color: $light-creme;
   }
 
   @media screen and (max-width: $breakpoint-menu) {

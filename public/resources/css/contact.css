@@ -232,7 +232,7 @@
     .content-img {
       width: 100%;
       height: auto;
-      min-height: 300px;
+      min-height: 250px;
       background-attachment: fixed; } }
 
 .content-info {
@@ -249,7 +249,8 @@
       width: 70%;
       border: 1px solid #d3d3d3;
       margin: 3rem 0 1.5rem 0;
-      min-height: auto; } }
+      min-height: auto;
+      background-color: #f8f8f8; } }
   @media screen and (max-width: 600px) {
     .content-info {
       width: 80%; } }
@@ -286,7 +287,8 @@
       min-height: auto;
       width: 70%;
       border: 1px solid #d3d3d3;
-      margin: 1.5rem 0; } }
+      margin: 1.5rem 0;
+      background-color: #f8f8f8; } }
   @media screen and (max-width: 600px) {
     .content-social {
       width: 80%; } }
@@ -331,7 +333,8 @@
       min-height: auto;
       width: 70%;
       border: 1px solid #d3d3d3;
-      margin: 1.5rem 0; } }
+      margin: 1.5rem 0;
+      background-color: #f8f8f8; } }
   @media screen and (max-width: 600px) {
     .content-hours {
       width: 80%; } }
