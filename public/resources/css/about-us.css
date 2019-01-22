@@ -99,6 +99,9 @@
     @media screen and (max-width: 700px) {
       .banner-title h1 {
         font-size: 3.5rem; } }
+  @media screen and (max-width: 600px) {
+    .banner-title h1:first-child {
+      padding: 4rem 0 0 0; } }
 
 #story-section {
   justify-content: center;

@@ -95,6 +95,9 @@
     @media screen and (max-width: 700px) {
       .banner-title h1 {
         font-size: 3.5rem; } }
+    @media screen and (max-width: 600px) {
+      .banner-title h1 {
+        padding: 4rem 0 0 0; } }
 
 #footer-section {
   justify-content: space-around;
@@ -247,6 +250,9 @@
       border: 1px solid #d3d3d3;
       margin: 3rem 0 1.5rem 0;
       min-height: auto; } }
+  @media screen and (max-width: 600px) {
+    .content-info {
+      width: 80%; } }
   .content-info span {
     font-size: 1.75rem;
     color: #1e1f26;
@@ -281,6 +287,9 @@
       width: 70%;
       border: 1px solid #d3d3d3;
       margin: 1.5rem 0; } }
+  @media screen and (max-width: 600px) {
+    .content-social {
+      width: 80%; } }
   .content-social span {
     font-size: 1.75rem;
     color: #1e1f26;
@@ -323,6 +332,9 @@
       width: 70%;
       border: 1px solid #d3d3d3;
       margin: 1.5rem 0; } }
+  @media screen and (max-width: 600px) {
+    .content-hours {
+      width: 80%; } }
   .content-hours span {
     font-size: 1.75rem;
     color: #1e1f26;

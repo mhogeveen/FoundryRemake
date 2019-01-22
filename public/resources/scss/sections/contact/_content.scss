@@ -46,6 +46,10 @@
     min-height: auto;
   }
 
+  @media screen and (max-width: $breakpoint-menu) {
+    width: 80%;
+  }
+
   span {
     font-size: 1.75rem;
     color: $blackish;
@@ -87,6 +91,10 @@
     width: 70%;
     border: $border-lightgray;
     margin: 1.5rem 0;
+  }
+
+  @media screen and (max-width: $breakpoint-menu) {
+    width: 80%;
   }
 
   span {
@@ -136,6 +144,10 @@
     width: 70%;
     border: $border-lightgray;
     margin: 1.5rem 0;
+  }
+
+  @media screen and (max-width: $breakpoint-menu) {
+    width: 80%;
   }
 
   span {

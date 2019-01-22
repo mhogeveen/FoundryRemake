@@ -103,4 +103,10 @@
       font-size: 3.5rem;
     }
   }
+
+  h1:first-child {
+    @media screen and (max-width: $breakpoint-menu) {
+      padding: 4rem 0 0 0;
+    }
+  }
 }
