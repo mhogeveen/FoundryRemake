@@ -38,6 +38,7 @@
   border: $border-lightgray;
   margin: 1rem 0;
   padding: 2rem;
+
 }
 
 .menu-info {
@@ -49,12 +50,14 @@
 .menu-pastries {
   background-color: $blackish;
   color: $white;
+  text-align: center;
 }
 
 .menu-drinks,
 .menu-entree {
   background-color: $light-creme;
   color: $blackish;
+  text-align: center;
 }
 
 .menu-entree {
@@ -67,6 +70,7 @@
 
 .menu-dessert {
   color: $blackish;
+  text-align: center;
 }
 
 .course {
@@ -89,5 +93,4 @@
   font-size: 0.8rem;
   font-weight: 400;
   padding: 1rem 0;
-  text-align: center;
 }

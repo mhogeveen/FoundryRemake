@@ -156,12 +156,14 @@
 .menu-main,
 .menu-pastries {
   background-color: #1e1f26;
-  color: #ffffff; }
+  color: #ffffff;
+  text-align: center; }
 
 .menu-drinks,
 .menu-entree {
   background-color: #f8f8f8;
-  color: #1e1f26; }
+  color: #1e1f26;
+  text-align: center; }
 
 .menu-entree {
   margin: 7rem 0 0 0; }
@@ -170,7 +172,8 @@
       margin: 1rem 0; } }
 
 .menu-dessert {
-  color: #1e1f26; }
+  color: #1e1f26;
+  text-align: center; }
 
 .course {
   font-size: 3rem;
@@ -188,8 +191,7 @@
 .description {
   font-size: 0.8rem;
   font-weight: 400;
-  padding: 1rem 0;
-  text-align: center; }
+  padding: 1rem 0; }
 
 #footer-section {
   justify-content: space-around;
