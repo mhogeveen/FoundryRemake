@@ -44,9 +44,11 @@
 
   ul {
     @include flex-box(flex-start, stretch, row, flex);
+    transition: display 400ms ease;
 
     @media screen and (max-width: $breakpoint-menu) {
       display: none;
+      opacity: 0;
       position: absolute;
       flex-direction: column;
       align-items: center;

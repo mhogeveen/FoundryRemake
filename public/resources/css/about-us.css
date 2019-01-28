@@ -55,6 +55,7 @@
     @media screen and (max-width: 600px) {
       .navigation-container ul {
         display: none;
+        opacity: 0;
         position: absolute;
         flex-direction: column;
         align-items: center;
