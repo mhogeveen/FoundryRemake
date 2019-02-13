@@ -54,7 +54,8 @@ $(document).ready(function() {
 
   // Close menu if clicked outside of menu in mobile view
   $('.main-content').click(function() {
-    if ($('.navigation-container ul').css('display') == 'flex') {
+    var windowSize = $(window).width();
+    if ($('.navigation-container ul').css('display') == 'flex' && windowSize < 600) {
       setTimeout(function() {
         $('.navigation-container ul').css('display', 'none');
       }, 400);
