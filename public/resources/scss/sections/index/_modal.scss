@@ -20,8 +20,13 @@
 .modal-content {
   position: relative;
   border: $border-white;
-  width: 60vw;
-  height: 60vw;
+  width: 40vw;
+  height: 40vw;
+
+  @media only screen and (max-width: $breakpoint2) {
+    width: 50vw;
+    height: 50vw;
+  }
 }
 
 .modal-caption {

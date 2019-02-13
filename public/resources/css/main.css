@@ -591,8 +591,12 @@
 .modal-content {
   position: relative;
   border: 1px solid #ffffff;
-  width: 60vw;
-  height: 60vw; }
+  width: 40vw;
+  height: 40vw; }
+  @media only screen and (max-width: 1300px) {
+    .modal-content {
+      width: 50vw;
+      height: 50vw; } }
 
 .modal-caption {
   color: #ffffff;
